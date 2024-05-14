@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/src/custom.css">
+    <link rel="stylesheet" href="/src/scroll.css">
+    <link rel="stylesheet" href="/public/output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single product</title>
+</head>
+<body class="min-w-screen font-Baloo">
+    <header class="md:container md:mx-auto">
+        <nav class="w-full bg-white border-gray-200 md:container md:mx-auto md:whitespace-nowrap">
+            <div class="flex items-center justify-between flex-nowrap">
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="/assets/logo/logo (1).svg" class="hidden md:w-2/3 lg:w-full md:flex h-28 bg-inherit" alt="LimeFiber">
+                    <span class="sr-only">LimeFiber</span>
+                    <img src="/assets/logo/logo (1).svg" class="w-32 h-20 md:hidden bg-inherit" alt="LimeFiber">
+                    <span class="sr-only">LimeFiber</span>
+                </a>
+                <div class="flex items-center space-x-3 whitespace-nowrap md:order-2 md:space-x-0">
+                    <div class="hidden md:pb-8 md:space-x-2 md:block">
+                        <button type="button" class="px-6 py-3 font-normal text-center text-black rounded-lg bg-inherit hover:text-slate-400">Log In</button>
+                        <button type="button" class="px-6 py-3 font-normal text-center text-gray-100 rounded-lg bg-main-color hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300">Sign Up</button>
+                    </div>
+                    <div class="flex md:hidden" id="openAccount">
+                        <span class="sr-only">Account</span>
+                    <img src="/assets/icons/Icon (5).svg" alt="" class="w-6 h-6">
+                    </div>
+                    <button type="button" id="openNavMenu" class="w-10 h-10 p-2 text-sm text-gray-500 rounded-lg inline-goal-button-container md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                    <span class="sr-only">Open main menu</span>
+                    <img src="/assets/icons/Group.svg" class="w-6 h-6" alt="">
+                </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:pb-8 md:flex md:w-auto md:order-1">
+                <ul class="flex flex-col p-4 mt-4 font-normal border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white ">
+                    <li>
+                    <a href="#" aria-current="page" class="block px-3 py-2 text-red-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500" >Home</a>
+                    </li>
+                    <li>
+                        <a href="/src/index.html" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-900 md:hover:text-green-700 md:p-0 md:active:text-red-500">Services</a>
+                    </li>
+                    <li>
+                    <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">About Us</a>
+                    </li>
+                    <li>
+                    <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">Contacts</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="min-h-screen mb-20">
+        <!--Desktop View-->
+        <section class="hidden md:grid md:container md:mx-auto md:mt-6 md:whitespace-nowrap">
+            <div class="flex justify-around w-full mb-10">
+                <!--Images as indicators.
+                --Use images as button such that clicking on them paginates to the item.
+                --Make scrollbar visible.
+                --Change scrollbar color to a reddish hue.
+                -->
+                <div class="flex flex-col justify-around">
+                    <img src="/assets/images/Img 01 (4).png" alt="" class="w-20 h-20">
+                    <img src="/assets/images/Img 01 (4).png" alt="" class="w-20 h-20">
+                    <img src="/assets/images/Img 01 (4).png" alt="" class="w-20 h-20">
+                    <img src="/assets/images/Img 01 (4).png" alt="" class="w-20 h-20">
+                </div>
+                <div class="flex w-1/3 overflow-visible overflow-x-auto">
+                    <img src="/assets/images/Img 01 (4).png" alt="" class="w-full h-auto">
+                    <img src="/assets/images/Img 01 (4).png" alt="" class="w-full h-auto">
+                    <img src="/assets/images/Img 01 (4).png" alt="" class="w-full h-auto">
+                    <img src="/assets/images/Img 01 (4).png" alt="" class="w-full h-auto">
+                </div>
+                <div class="flex flex-col justify-center space-y-8 whitespace-nowrap">
+                    <div class="flex flex-col my-3 space-y-3">
+                        <span class="font-normal">Wireless N Router</span>
+                        <span class="text-main-color">Ksh. 20,000</span>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <div class="flex space-x-3">
+                            <div class="flex space-x-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_58_703)">
+                                    <path d="M17.085 6.74501L17.0851 6.74503C17.2664 6.76143 17.4205 6.88395 17.4773 7.05836C17.5344 7.23409 17.4816 7.42448 17.3441 7.54516L13.4164 10.9892L13.1925 11.1855L13.2585 11.4758L14.4165 16.5761C14.4573 16.757 14.3872 16.9415 14.2392 17.0485L14.2388 17.0488C14.0903 17.1564 13.8933 17.1649 13.7363 17.0711L9.25665 14.3921L9.00005 14.2386L8.74343 14.3921L4.26286 17.0711L4.26272 17.0712C4.19024 17.1146 4.10961 17.136 4.0289 17.136C3.93458 17.136 3.84149 17.1071 3.76181 17.0492L3.76082 17.0485C3.61289 16.9416 3.54275 16.7571 3.58354 16.5762C3.58356 16.5762 3.58357 16.5761 3.58358 16.5761L4.74158 11.4758L4.8075 11.1855L4.58364 10.9892L0.655856 7.54508C0.655844 7.54507 0.655833 7.54506 0.655821 7.54505C0.518482 7.42458 0.465875 7.23386 0.522437 7.0592C0.579917 6.8845 0.734077 6.76189 0.915387 6.74499C0.915529 6.74497 0.915672 6.74496 0.915815 6.74495L6.11196 6.27328L6.4093 6.24629L6.52658 5.97173L8.58009 1.16403L8.58019 1.16379C8.65224 0.99486 8.81636 0.886444 9.00002 0.886444C9.18324 0.886444 9.34781 0.994506 9.42094 1.1644C9.421 1.16455 9.42107 1.1647 9.42113 1.16485L11.4743 5.97173L11.5916 6.24629L11.8889 6.27328L17.085 6.74501Z" stroke="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_58_703">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_58_703)">
+                                    <path d="M17.085 6.74501L17.0851 6.74503C17.2664 6.76143 17.4205 6.88395 17.4773 7.05836C17.5344 7.23409 17.4816 7.42448 17.3441 7.54516L13.4164 10.9892L13.1925 11.1855L13.2585 11.4758L14.4165 16.5761C14.4573 16.757 14.3872 16.9415 14.2392 17.0485L14.2388 17.0488C14.0903 17.1564 13.8933 17.1649 13.7363 17.0711L9.25665 14.3921L9.00005 14.2386L8.74343 14.3921L4.26286 17.0711L4.26272 17.0712C4.19024 17.1146 4.10961 17.136 4.0289 17.136C3.93458 17.136 3.84149 17.1071 3.76181 17.0492L3.76082 17.0485C3.61289 16.9416 3.54275 16.7571 3.58354 16.5762C3.58356 16.5762 3.58357 16.5761 3.58358 16.5761L4.74158 11.4758L4.8075 11.1855L4.58364 10.9892L0.655856 7.54508C0.655844 7.54507 0.655833 7.54506 0.655821 7.54505C0.518482 7.42458 0.465875 7.23386 0.522437 7.0592C0.579917 6.8845 0.734077 6.76189 0.915387 6.74499C0.915529 6.74497 0.915672 6.74496 0.915815 6.74495L6.11196 6.27328L6.4093 6.24629L6.52658 5.97173L8.58009 1.16403L8.58019 1.16379C8.65224 0.99486 8.81636 0.886444 9.00002 0.886444C9.18324 0.886444 9.34781 0.994506 9.42094 1.1644C9.421 1.16455 9.42107 1.1647 9.42113 1.16485L11.4743 5.97173L11.5916 6.24629L11.8889 6.27328L17.085 6.74501Z" stroke="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_58_703">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_58_703)">
+                                    <path d="M17.085 6.74501L17.0851 6.74503C17.2664 6.76143 17.4205 6.88395 17.4773 7.05836C17.5344 7.23409 17.4816 7.42448 17.3441 7.54516L13.4164 10.9892L13.1925 11.1855L13.2585 11.4758L14.4165 16.5761C14.4573 16.757 14.3872 16.9415 14.2392 17.0485L14.2388 17.0488C14.0903 17.1564 13.8933 17.1649 13.7363 17.0711L9.25665 14.3921L9.00005 14.2386L8.74343 14.3921L4.26286 17.0711L4.26272 17.0712C4.19024 17.1146 4.10961 17.136 4.0289 17.136C3.93458 17.136 3.84149 17.1071 3.76181 17.0492L3.76082 17.0485C3.61289 16.9416 3.54275 16.7571 3.58354 16.5762C3.58356 16.5762 3.58357 16.5761 3.58358 16.5761L4.74158 11.4758L4.8075 11.1855L4.58364 10.9892L0.655856 7.54508C0.655844 7.54507 0.655833 7.54506 0.655821 7.54505C0.518482 7.42458 0.465875 7.23386 0.522437 7.0592C0.579917 6.8845 0.734077 6.76189 0.915387 6.74499C0.915529 6.74497 0.915672 6.74496 0.915815 6.74495L6.11196 6.27328L6.4093 6.24629L6.52658 5.97173L8.58009 1.16403L8.58019 1.16379C8.65224 0.99486 8.81636 0.886444 9.00002 0.886444C9.18324 0.886444 9.34781 0.994506 9.42094 1.1644C9.421 1.16455 9.42107 1.1647 9.42113 1.16485L11.4743 5.97173L11.5916 6.24629L11.8889 6.27328L17.085 6.74501Z" stroke="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_58_703">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_58_703)">
+                                    <path d="M17.085 6.74501L17.0851 6.74503C17.2664 6.76143 17.4205 6.88395 17.4773 7.05836C17.5344 7.23409 17.4816 7.42448 17.3441 7.54516L13.4164 10.9892L13.1925 11.1855L13.2585 11.4758L14.4165 16.5761C14.4573 16.757 14.3872 16.9415 14.2392 17.0485L14.2388 17.0488C14.0903 17.1564 13.8933 17.1649 13.7363 17.0711L9.25665 14.3921L9.00005 14.2386L8.74343 14.3921L4.26286 17.0711L4.26272 17.0712C4.19024 17.1146 4.10961 17.136 4.0289 17.136C3.93458 17.136 3.84149 17.1071 3.76181 17.0492L3.76082 17.0485C3.61289 16.9416 3.54275 16.7571 3.58354 16.5762C3.58356 16.5762 3.58357 16.5761 3.58358 16.5761L4.74158 11.4758L4.8075 11.1855L4.58364 10.9892L0.655856 7.54508C0.655844 7.54507 0.655833 7.54506 0.655821 7.54505C0.518482 7.42458 0.465875 7.23386 0.522437 7.0592C0.579917 6.8845 0.734077 6.76189 0.915387 6.74499C0.915529 6.74497 0.915672 6.74496 0.915815 6.74495L6.11196 6.27328L6.4093 6.24629L6.52658 5.97173L8.58009 1.16403L8.58019 1.16379C8.65224 0.99486 8.81636 0.886444 9.00002 0.886444C9.18324 0.886444 9.34781 0.994506 9.42094 1.1644C9.421 1.16455 9.42107 1.1647 9.42113 1.16485L11.4743 5.97173L11.5916 6.24629L11.8889 6.27328L17.085 6.74501Z" stroke="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_58_703">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_58_703)">
+                                    <path d="M17.085 6.74501L17.0851 6.74503C17.2664 6.76143 17.4205 6.88395 17.4773 7.05836C17.5344 7.23409 17.4816 7.42448 17.3441 7.54516L13.4164 10.9892L13.1925 11.1855L13.2585 11.4758L14.4165 16.5761C14.4573 16.757 14.3872 16.9415 14.2392 17.0485L14.2388 17.0488C14.0903 17.1564 13.8933 17.1649 13.7363 17.0711L9.25665 14.3921L9.00005 14.2386L8.74343 14.3921L4.26286 17.0711L4.26272 17.0712C4.19024 17.1146 4.10961 17.136 4.0289 17.136C3.93458 17.136 3.84149 17.1071 3.76181 17.0492L3.76082 17.0485C3.61289 16.9416 3.54275 16.7571 3.58354 16.5762C3.58356 16.5762 3.58357 16.5761 3.58358 16.5761L4.74158 11.4758L4.8075 11.1855L4.58364 10.9892L0.655856 7.54508C0.655844 7.54507 0.655833 7.54506 0.655821 7.54505C0.518482 7.42458 0.465875 7.23386 0.522437 7.0592C0.579917 6.8845 0.734077 6.76189 0.915387 6.74499C0.915529 6.74497 0.915672 6.74496 0.915815 6.74495L6.11196 6.27328L6.4093 6.24629L6.52658 5.97173L8.58009 1.16403L8.58019 1.16379C8.65224 0.99486 8.81636 0.886444 9.00002 0.886444C9.18324 0.886444 9.34781 0.994506 9.42094 1.1644C9.421 1.16455 9.42107 1.1647 9.42113 1.16485L11.4743 5.97173L11.5916 6.24629L11.8889 6.27328L17.085 6.74501Z" stroke="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_58_703">
+                                    <rect width="18" height="18" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span class="text-privacy-text-color">1 customer Review</span>
+                        </div>
+                        <p class="text-privacy-text-color">Lorem ipsum sit dolor amet consectetuer adispicing elit. <br>
+                            Aliquem placerat, augue a voluptat henderit sapien <br>
+                            tortor faucibus augue a maximus elit ex vitae libero. Sed <br>
+                            quis mauris eget arcu facilis consequat sed au felis <br>
+                        </p>
+                    </div>
+                    <div class="flex items-start">
+                        <button class="px-20 py-2 border-2 rounded-md border-main-color">
+                            <span>Buy Now</span>
+                        </button>
+                    </div>
+                    <div class="flex divide-x">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9199 33.0136L17.9192 33.0129C13.6177 29.1124 10.0874 25.9066 7.6267 22.8961C5.17146 19.8923 3.83331 17.144 3.83331 14.1667C3.83331 9.2934 7.64219 5.5 12.5 5.5C15.2488 5.5 17.8954 6.78223 19.6206 8.79231L20 9.23438L20.3794 8.79231C22.1046 6.78223 24.7511 5.5 27.5 5.5C32.3578 5.5 36.1666 9.2934 36.1666 14.1667C36.1666 17.144 34.8285 19.8923 32.3733 22.8961C29.9125 25.9066 26.3823 29.1124 22.0808 33.0129L22.0801 33.0136L20 34.9072L17.9199 33.0136Z" fill="white" stroke="black"/>
+                        </svg>
+                        <div class="flex items-center space-x-3">
+                            <a href="#">
+                                <svg class="w-6 h-6" viewBox="0 0 19 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.23047 1.88414L9.48706 10.1034L17.7436 1.88414" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </a>
+                            <a href="#">
+                                <svg class="w-6 h-6" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.13542 1.9375H4.19792C3.84123 1.9375 3.55208 2.22665 3.55208 2.58333V4.52083H6.13542C6.20887 4.5192 6.27854 4.55338 6.32221 4.61246C6.36588 4.67155 6.37811 4.74817 6.355 4.81792L5.87708 6.23875C5.83304 6.36916 5.71118 6.45731 5.57354 6.45833H3.55208V11.3021C3.55208 11.4804 3.40751 11.625 3.22917 11.625H1.61458C1.43624 11.625 1.29167 11.4804 1.29167 11.3021V6.45833H0.322917C0.144575 6.45833 0 6.31376 0 6.13542V4.84375C0 4.66541 0.144575 4.52083 0.322917 4.52083H1.29167V2.58333C1.29167 1.1566 2.44826 0 3.875 0H6.13542C6.31376 0 6.45833 0.144575 6.45833 0.322917V1.61458C6.45833 1.79293 6.31376 1.9375 6.13542 1.9375Z" fill="#707070"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="w-6 h-6" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.35408 0.645996H4.18742C2.404 0.645996 0.958252 2.09174 0.958252 3.87516V9.04183C0.958252 10.8252 2.404 12.271 4.18742 12.271H9.35408C11.1375 12.271 12.5833 10.8252 12.5833 9.04183V3.87516C12.5833 2.09174 11.1375 0.645996 9.35408 0.645996ZM11.4529 9.04187C11.4493 10.1996 10.5117 11.1373 9.35391 11.1408H4.18725C3.0295 11.1373 2.09183 10.1996 2.08829 9.04187V3.8752C2.09183 2.71745 3.0295 1.77979 4.18725 1.77625H9.35391C10.5117 1.77979 11.4493 2.71745 11.4529 3.8752V9.04187ZM9.83829 4.03666C10.195 4.03666 10.4841 3.74751 10.4841 3.39083C10.4841 3.03414 10.195 2.745 9.83829 2.745C9.48161 2.745 9.19246 3.03414 9.19246 3.39083C9.19246 3.74751 9.48161 4.03666 9.83829 4.03666ZM6.77058 3.55225C5.16551 3.55225 3.86433 4.85343 3.86433 6.4585C3.86433 8.06358 5.16551 9.36475 6.77058 9.36475C8.37566 9.36475 9.67683 8.06358 9.67683 6.4585C9.67855 5.68719 9.37291 4.94698 8.82751 4.40158C8.28211 3.85617 7.5419 3.55053 6.77058 3.55225ZM4.99454 6.45854C4.99454 7.43942 5.7897 8.23458 6.77058 8.23458C7.75146 8.23458 8.54662 7.43942 8.54662 6.45854C8.54662 5.47766 7.75146 4.6825 6.77058 4.6825C5.7897 4.6825 4.99454 5.47766 4.99454 6.45854Z" fill="#707070"/>
+                                </svg>                                
+                            </a>
+                            <a href="#">
+                                <svg class="w-6 h-6" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.981 2.23719C12.6477 2.68175 12.2449 3.06954 11.788 3.38559C11.788 3.50172 11.788 3.61785 11.788 3.74043C11.7917 5.84935 10.9493 7.87152 9.44972 9.35363C7.95013 10.8357 5.91879 11.6538 3.81108 11.6244C2.59256 11.6285 1.38965 11.3502 0.296572 10.8115C0.237633 10.7858 0.199618 10.7274 0.199842 10.6631V10.5921C0.199842 10.4995 0.274908 10.4244 0.367507 10.4244C1.56528 10.3849 2.72032 9.96962 3.66921 9.23727C2.58506 9.21544 1.6096 8.57319 1.16069 7.58564C1.13801 7.5317 1.14507 7.46984 1.17932 7.4224C1.21356 7.37496 1.27004 7.3488 1.32835 7.35338C1.65785 7.3865 1.99064 7.35583 2.30854 7.26306C1.11173 7.01462 0.212466 6.02104 0.0837668 4.80496C0.0791926 4.74662 0.105336 4.69012 0.152752 4.65586C0.200168 4.6216 0.262002 4.61453 0.315918 4.63722C0.637089 4.77893 0.983793 4.85358 1.3348 4.85658C0.286112 4.16827 -0.166852 2.85909 0.232085 1.66944C0.273265 1.55384 0.372199 1.46844 0.492531 1.44463C0.612863 1.42082 0.736843 1.4621 0.818911 1.55331C2.23405 3.05944 4.17848 3.95694 6.24221 4.05657C6.18935 3.84563 6.16335 3.62886 6.16483 3.4114C6.18413 2.27114 6.88965 1.25538 7.95109 0.839656C9.01252 0.423929 10.2198 0.690512 11.0077 1.5146C11.5448 1.41228 12.0641 1.23187 12.549 0.97911C12.5845 0.956935 12.6295 0.956935 12.665 0.97911C12.6872 1.01464 12.6872 1.05971 12.665 1.09524C12.4302 1.63306 12.0334 2.08414 11.5301 2.38558C11.9709 2.33446 12.4039 2.23049 12.8198 2.0759C12.8548 2.05206 12.9009 2.05206 12.9359 2.0759C12.9652 2.08932 12.9872 2.11499 12.9959 2.14607C13.0046 2.17714 12.9991 2.21048 12.981 2.23719Z" fill="#707070"/>
+                                </svg>       
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex space-x-3">
+                        <span>Categories:</span>
+                        <span class="text-privacy-text-color">Hardware, Routers</span>
+                    </div> 
+                </div>
+            </div>
+           <div class="flex justify-between border-t-2">
+            <div class="flex flex-col w-1/2">
+                <nav class="flex justify-between">
+                    <a href="#" class="active:text-red-500">Description</a>
+                    <a href="#" class="active:text-red-500">Additional information</a>
+                    <a href="#" class="active:text-red-500">Reviews(2)</a>
+                </nav>
+                <!--Added Reviews-->
+                <div class="flex flex-col mt-8 space-y-4">
+                    <p>2 Reviews for Wireless N Router</p>
+                   <article class="">
+                    <div class="grid grid-cols-2 gap-2">
+                        <p>Scarlet User</p>
+                        <p>6 October,2023</p>
+                        <div class="flex">
+                            <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam <br>
+                        nonummy nibh euismod tincidunt ut laoreet. 
+                    </p>
+                   </article>
+                   <article>
+                    <div class="grid grid-cols-2 gap-2">
+                        <p>Scarlet User</p>
+                        <p>6 October,2023</p>
+                        <div class="flex">
+                            <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam <br>
+                        nonummy nibh euismod tincidunt ut laoreet. lorem ipsum dolor sit <br>
+                        amet consectetuer adispicing elit. Aliquam placerat.
+                    </p>
+                   </article>
+                </div>
+            </div>
+            <!--Form section add review-->
+            <div class="flex flex-col mt-8">
+                    <div class="flex flex-col space-y-2">
+                        <h3 class="font-[400] text-black leading-[26px]">Add a Review</h3>
+                        <span class="text-black font-[400] leading-[30px] text-xs">Your Email address will not be Published. Required Fields Are Marked *</span>
+                    </div>
+                    <!--Review Form-->
+                    <form action="#" class="flex flex-col space-y-8">
+                        <!--Add a review-->
+                        <div class="relative z-0">
+                            <input type="text" id="small_standard" class="block w-full px-0 pb-3 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                            <label for="small_standard" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Your Review*</label>
+                        </div>
+                        <!--Add a Name-->
+                        <div class="relative z-0">
+                            <input type="text" id="small_standard" class="block w-full px-0 py-2 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                            <label for="small_standard" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Enter your name*</label>
+                        </div>
+                        <!--Add Email-->
+                        <div class="relative z-0">
+                            <input type="email" id="small_standard" class="block w-full px-0 py-2 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
+                            <label for="small_standard" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Enter your email*</label>
+                        </div>
+                        <!--Checkbox-->
+                        <div class="flex items-center mb-4 space-x-3">
+                            <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 text-main-color focus:ring-main-color focus:ring-2">
+                            <label for="default-checkbox" class="text-sm font-medium text-gray-900 ms-2 dark:text-gray-300">Save my name, email and website in this browser for the next time I comment</label>
+                        </div>
+                        <!--Rating-->
+                        <div class="flex flex-col">
+                            <span>Your rating</span>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-gray-300 ms-1 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                       <!--Submit Button-->
+                       <div class="flex items-start">
+                        <button class="py-2 text-center text-white rounded-md px-7 bg-main-color">
+                            <span class="font-normal">Submit</span>
+                        </button>
+                       </div>
+                    </form>     
+            </div>
+           </div>
+           <!--More on LimeFiber-->
+           <div class="flex flex-col">
+            <span class="font-normal">More on LimeFiber</span>
+            <div class="flex justify-between">
+                <div class="flex flex-col">
+                    <img src="/assets/images/Img 01 (8).png" alt="">
+                    <div class="flex flex-col space-y-2">
+                        <span>Smart TV Box</span>
+                        <span class="text-main-color">Ksh. 15,000</span>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <img src="/assets/images/Img 02.jpg" alt="" class="">
+                    <div class="flex flex-col space-y-2">
+                        <span>Smart TV</span>
+                        <span  class="text-main-color">Ksh.15,000</span>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <img src="/assets/images/Img 04 (3).png" alt="">
+                    <div class="flex flex-col space-y-2">
+                        <span>CCTV Camera</span>
+                        <span  class="text-main-color">Ksh. 15,000</span>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+        <!--Mobile View-->
+        <section class="md:hidden">
+            <div class="flex flex-col mx-3">
+                <div class="flex flex-row overflow-x-auto">
+                    <img src="/assets/images/Img 05 (2).png" alt="" class="w-full h-auto">
+                    <img src="/assets/images/Img 05 (2).png" alt="" class="w-full h-auto">
+                    <img src="/assets/images/Img 05 (2).png" alt="" class="w-full h-auto">
+                </div>
+                <div class="flex flex-col my-5 space-y-1">
+                    <h2 class="text-lg">Wireless N Router</h2>
+                    <div class="flex justify-between">
+                        <span class="text-main-color">Ksh 20,000</span>
+                        <a href="#">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_547_812)">
+                                <path d="M12.9701 2.3333C12.9701 3.38037 12.1213 4.2292 11.0743 4.2292C10.0272 4.2292 9.17847 3.38037 9.17847 2.3333C9.17847 1.28633 10.0272 0.4375 11.0743 0.4375C12.1213 0.4375 12.9701 1.28633 12.9701 2.3333Z" fill="black"/>
+                                <path d="M11.0743 4.6667C9.7874 4.6667 8.74097 3.62016 8.74097 2.3333C8.74097 1.04654 9.7874 0 11.0743 0C12.3611 0 13.4076 1.04654 13.4076 2.3333C13.4076 3.62016 12.3611 4.6667 11.0743 4.6667ZM11.0743 0.875C10.2699 0.875 9.61597 1.52954 9.61597 2.3333C9.61597 3.13716 10.2699 3.7917 11.0743 3.7917C11.8787 3.7917 12.5326 3.13716 12.5326 2.3333C12.5326 1.52954 11.8787 0.875 11.0743 0.875Z" fill="black"/>
+                                <path d="M12.9701 11.6669C12.9701 12.7139 12.1213 13.5627 11.0743 13.5627C10.0272 13.5627 9.17847 12.7139 9.17847 11.6669C9.17847 10.6198 10.0272 9.771 11.0743 9.771C12.1213 9.771 12.9701 10.6198 12.9701 11.6669Z" fill="black"/>
+                                <path d="M11.0743 14.0002C9.7874 14.0002 8.74097 12.9537 8.74097 11.6669C8.74097 10.38 9.7874 9.3335 11.0743 9.3335C12.3611 9.3335 13.4076 10.38 13.4076 11.6669C13.4076 12.9537 12.3611 14.0002 11.0743 14.0002ZM11.0743 10.2085C10.2699 10.2085 9.61597 10.863 9.61597 11.6669C9.61597 12.4707 10.2699 13.1252 11.0743 13.1252C11.8787 13.1252 12.5326 12.4707 12.5326 11.6669C12.5326 10.863 11.8787 10.2085 11.0743 10.2085Z" fill="black"/>
+                                <path d="M4.80342 6.9998C4.80342 8.04687 3.95459 8.8956 2.90752 8.8956C1.86055 8.8956 1.01172 8.04687 1.01172 6.9998C1.01172 5.95273 1.86055 5.104 2.90752 5.104C3.95459 5.104 4.80342 5.95273 4.80342 6.9998Z" fill="black"/>
+                                <path d="M2.90752 9.3331C1.62076 9.3331 0.574219 8.28667 0.574219 6.9998C0.574219 5.71294 1.62076 4.6665 2.90752 4.6665C4.19438 4.6665 5.24092 5.71294 5.24092 6.9998C5.24092 8.28667 4.19438 9.3331 2.90752 9.3331ZM2.90752 5.5415C2.10312 5.5415 1.44922 6.19594 1.44922 6.9998C1.44922 7.80366 2.10312 8.4581 2.90752 8.4581C3.71202 8.4581 4.36592 7.80366 4.36592 6.9998C4.36592 6.19594 3.71202 5.5415 2.90752 5.5415Z" fill="black"/>
+                                <path d="M4.28484 6.72004C4.08179 6.72004 3.88462 6.6144 3.77727 6.42545C3.61802 6.14603 3.71607 5.7896 3.99549 5.62971L9.40817 2.54392C9.68758 2.38349 10.044 2.48154 10.2039 2.76203C10.3632 3.04145 10.2651 3.39788 9.9857 3.55778L4.57291 6.64356C4.48191 6.69547 4.38279 6.72004 4.28484 6.72004Z" fill="black"/>
+                                <path d="M9.69697 11.5324C9.59892 11.5324 9.4998 11.5079 9.40879 11.456L3.99602 8.37016C3.7166 8.21091 3.61866 7.85448 3.77791 7.57442C3.93653 7.29446 4.29349 7.19588 4.57355 7.35631L9.98632 10.4421C10.2657 10.6014 10.3637 10.9578 10.2044 11.2378C10.0966 11.4268 9.89938 11.5324 9.69697 11.5324Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_547_812">
+                                <rect width="14" height="14" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <button class="py-1 mb-4 font-medium text-black border-2 rounded border-main-color">BUY NOW</button>
+                <div class="flex flex-col space-y-3 border-b-2 border-gray-300">
+                    <p class="text-privacy-text-color leading-[20px]">Lorem ipsum dolor sit amet,n consectetuer adispice elit
+                        Aliquam placerat... 
+                    </p>
+                    <a href="#" class="flex items-center pb-3 space-x-3 text-red-500">
+                        <span class="">View more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>                          
+                    </a>
+                </div>
+                <!--Description-->
+                <div class="flex flex-col space-y-5 border-b-2 border-gray-300 pb-7 mt-7">
+                    <div class="flex items-center justify-between">
+                        <p>Description</p>
+                        <img src="/assets/icons/Icon color (10).svg" alt="">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p>Additional information</p>
+                        <img src="/assets/icons/Icon color (10).svg" alt="">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <p>Reviews(0)</p>
+                        <img src="/assets/icons/Icon color (10).svg" alt="">
+                    </div>
+                </div>
+                <!--More on LimeFiber-->
+                <div class="flex flex-col space-y-5 mt-7">
+                    <h2 class="text-lg text-start">More on LimeFiber!</h2>
+                    <div class="flex items-center w-full overflow-x-auto scrollbar-hidden">
+                        <div class="flex flex-col shrink-0">
+                            <img src="/assets/images/Rectangle 27.png" alt="" class="">
+                            <div class="flex flex-col space-y-1">
+                                <h3>Wireless N router</h3>
+                                <span class="text-main-color">Ksh. 5,000</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col shrink-0">
+                            <img src="/assets/images/Rectangle 27.png" alt="" class="">
+                            <div class="flex flex-col space-y-1">
+                                <h3>Wireless Router</h3>
+                                <span class="text-main-color">Ksh. 5,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <a href="#"><span class="text-main-color">View All</span></a>
+                        <img src="/assets/icons/Icon color (9).svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="md:container md:mx-auto md:border-t-2 md:pt-10">
+        <!--Desktop View-->
+        <div class="hidden md:block">
+            <div class="flex flex-wrap justify-between gap-3 mx-3">
+                <ul class="flex space-x-10 text-xs uppercase whitespace-nowrap">
+                    <li class="text-[#707070] font-[400] text-[12px] leading-[20px]">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="text-[#707070] font-[400] text-[12px] leading-[20px]">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="text-[#707070] font-[400] text-[12px] leading-[20px]">
+                        <a href="#">Terms of Service</a>
+                    </li>
+                </ul>
+                <div class="flex space-x-14 md:border-gray-500 md:border-b-2 md:text-sm">
+                    <a href="#" class="text-gray-600">Subscribe to our newsletters</a>
+                    <a href="#" class="text-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mb-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>         
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-between gap-0 mr-3">
+                <div class="inline-flex items-center justify-between space-x-3 whitespace-nowrap">
+                    <div>
+                        <img src="/assets/logo/logo (1).svg" class="w-36 h-28" alt="">
+                    </div>
+                    <span> <span class="hover:underline hover:cursor-pointer"> © 2024 LimeFiber.</span>All rights reserved.</span>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-4 h-4" viewBox="0 0 50 50">
+                            <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"></path>
+                            </svg>
+                        <span class="sr-only">LinkedIn account</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-900">
+                          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                                <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                            </svg>
+                          <span class="sr-only">Facebook page</span>
+                      </a>
+                      <a href="#" class="text-gray-400 hover:text-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-4 h-4" viewBox="0 0 50 50">
+                                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                            </svg>
+                        <span class="sr-only">Instagram account</span>
+                        </a>
+                      <a href="#" class="text-gray-400 hover:text-gray-900">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                          <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                      </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Mobile View-->
+        <div class="flex flex-col mx-3 mb-8 md:hidden">
+            <div class="flex flex-col my-2 divide-y-2 divide-black">
+                <div class="flex justify-between">
+                    <p class="mb-2 text-[#707070] text-[12px] leading-[20px]">Subscribe to our Newsletters</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+                <div class="flex space-x-1 whitespace-nowrap">
+                    <input type="checkbox" name="checkbox" id="checkbox-main" class="w-[13px] h-[13px] rounded-[2px] border-[1px] border-[#707070] mt-[10px] bg-inherit text-button-color">
+                    <p class="mt-2 text-[12px] leading-[20px] font-[400]">i agree to the website's terms and conditions</p>
+                </div>
+            </div>
+            <!--Logo-->
+            <div class="flex flex-row items-start mt-4">
+                <ul class="flex flex-col gap-4 text-[15px] text-[#707070] uppercase text-nowrap">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+                <div class="flex ml-8 basis-1/2">
+                    <img src="/assets/logo/logo (1).svg" alt="LimeFiber" class="h-auto m-4 max-sm:w-full md:w-full">
+                </div>
+            </div>
+            <!--Socials-->
+            <div class="flex items-center w-3/4 mt-8 space-x-2">
+                <div class="ml-6">
+                    <p>Socials!</p>
+                </div>
+                <div>
+                    <svg width="47" height="4" viewBox="0 0 47 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="-4.37114e-08" y1="0.5" x2="47" y2="0.499996" stroke="black"/>
+                    </svg>                        
+                </div>
+                <div class="flex border-b border-black"></div>
+                <div class="flex space-x-3">
+                    <img src="/assets/icons/Icon color (6).svg" alt="">
+                    <img src="/assets/icons/Icon color (7).svg" alt="">
+                    <img src="/assets/icons/Icon color (8).svg" alt="">
+                </div>
+            </div>
+            <div class="text-[#707070] text-sm leading-[20px] mt-10">
+                <p> <span><a href="#">© 2024 LimeFiber.</a></span></a>All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Bruno+Ace&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Bruno+Ace&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    /**Desktop re-usable styles*/
+    /**landing page**/
+    .sect-identifier{
+        @apply font-[500] uppercase text-sect-identifier text-[14px]
+
+    }
+    .section-header-main{
+        @apply font-[600] text-black leading-[28.5px] text-[30px];
+    }
+    .section-header-secondary {
+        @apply font-[400] leading-3 text-black text-[28px];
+    }
+
+    
+    /**Blog and news containers**/
+    .news-main-container{
+        @apply flex flex-col items-start;
+        .news-thumbnail{
+            @apply w-full h-auto ;
+        }
+        .image-figcaption{
+            @apply font-[400] text-[16px] leading-[22px] text-privacy-text-color;
+        }
+        .news-content-container{
+            @apply flex flex-col items-start gap-2;
+            .article-main-heading{
+                @apply font-[500] text-[22px] leading-[26px];
+            }
+            .article-news-section{
+                @apply text-privacy-text-color text-[18px] leading-[27px] font-[400];
+            }
+            .article-news-link{
+                @apply text-main-color font-[700] text-[18px] leading-[30.31px];
+            }
+        }
+    }
+    /*General Products and services section
+    * Desktop
+    */
+    .main-item-container{
+        @apply flex;
+        .item-image{
+            @apply w-1/2 h-auto;
+        }
+        .item-content-wrapper{
+            @apply flex flex-col items-center justify-center gap-4 p-4 text-center font-Baloo Da 2;
+            .item-main-heading{
+                @apply font-[500] text-[38px] leading-[43px];
+            }
+            .item-description{
+                @apply font-[400] text-privacy-text-color text-[17px] leading-[28.63px] text-center;
+            }
+        }
+        .item-button-wrapper{
+            @apply flex items-center px-5 py-2 text-white rounded-lg bg-main-color;
+            .button-description{
+                @apply leading-[28.5px];
+            }
+            .button-icon{
+                @apply w-5 h-5;
+            }
+        }
+    }
+    /***Services and Landing Page( second edition) Styles*/
+
+    .heading-section{
+        @apply font-[400] text-[14px] leading-[28.5px] text-[#8A898E] tracking-[6px] uppercase;
+    }
+    .heading-subsection{
+        @apply text-4xl font-medium text-gray-800;
+    }
+    .btn-secondary{
+        @apply  text-center text-green-500 tracking-wide text-opacity-85 border border-gray-300 font-medium rounded-[28px] hover:shadow-md hover:text-green-300 hover:shadow-green-300;
+    }
+    /*Landing Page**/
+    /**Packages styles*/
+    .goal-service-container{
+        @apply py-3 pl-2 pr-2 text-sm text-gray-500 bg-white border rounded-lg shadow-lg border-gray-50 whitespace-nowrap w-72;
+        .goal-service-icon-container{
+            @apply flex justify-start min-w-full my-2;
+            .services-icon-styles{
+                @apply w-10 h-10 p-1 bg-red-700 rounded-lg;
+            }
+        }
+        .package-heading-styles{
+            @apply font-[600] text-[16px] leading-[21.97px];
+        }
+        .package-description-styles{
+            @apply font-[400] text-[15px] leading-[21.97px];
+        }
+    }
+    /**Testimonials */
+    .testimonial-desktop-container{
+        @apply flex mt-8 space-x-2 text-xs md:text-sm shrink-0 md:w-1/2 lg:w-1/3 xl:w-1/4 xl:space-x-3;
+        .tesimonial-desktop-image-container{
+            @apply w-[70px] h-[70px];
+            .tesimonial-desktop-image{
+                @apply w-[70px] h-[70px] rounded-[12px];
+            }
+        }
+        .testimonial-desktop-message-container{
+            @apply flex-col space-y-5;
+            .testimonial-desktop-message{
+                @apply text-[#707070] leading-[28.5px] text-[18px] font-[400];
+            }
+            .testimonial-desktop-user{
+                @apply text-[14px] text-[#707070] leading-[26px] font-[400] uppercase;
+            }
+        }
+    }
+    /*Mobile Styles*/
+    .heading-section-mobile{
+        @apply font-[400] text-[14px] leading-[28.5px] tracking-[0.55em] text-center md:hidden; 
+    }
+    .heading-subsection-mobile{
+        @apply font-[600] text-[18px] leading-[28.5px] text-center text-black;
+    }
+    .mobile-minor-heading-one{
+        @apply text-[18px] leading-[28.5px];
+    
+    }
+    .mobile-minor-heading-two{
+        @apply text-[17px] leading-[26px];
+    
+    }
+    .mobile-minor-heading-three{
+        @apply text-[14px] leading-[32px];
+    
+    }
+    .mobile-minor-heading-four{
+        @apply text-[22px] leading-[28.5px] font-[400] text-nowrap text-center font-baloo;
+    
+    }
+    .mobile-button-main{
+        @apply w-[106px] h-[43px] rounded-[10px] text-white bg-button-color px-6 py-4 ; 
+    }
+    /**Value Proposition Mobile*/
+    .value-prop-main-container{
+        @apply flex flex-col gap-3 mx-2 mt-8;
+        .value-prop-secodary-container{
+            @apply flex flex-col gap-3;
+            .value-prop-image-container{
+                @apply flex items-center justify-center;
+            }
+            .value-prop-content-container{
+                @apply flex flex-col items-center justify-center gap-3 text-center;
+                .value-prop-content-heading{
+                    @apply font-[600] text-[18px] leading-[28.5px];
+                }
+                .value-prop-content-body{
+                    @apply font-[400] text-[16px] leading-[28.5px];
+                }
+                .value-prop-content-button{
+                    @apply bg-button-color rounded-[10px] p-4 text-center text-white;
+                }
+            }
+        }
+    }
+    /*Services Page*/
+    .custom-table-div{
+        @apply flex items-center justify-center;
+      }
+    .custom-table-checkbox{
+        @apply w-4 h-4 text-green-500 bg-white border-gray-300 rounded-full focus:ring-green-400 dark:focus:ring-green-400;
+      }
+    /*Value Proposition*/
+    /**Goals*/
+    .main-goal-container{
+        @apply flex flex-col items-center gap-5 bg-inherit md:flex-row;
+        .goal-sect-main{
+            @apply flex flex-col items-center justify-center gap-6 basis-1/3;
+            .goal-icon-mobile{
+                @apply p-3 bg-blue-600 rounded-full md:hidden;
+                .icon-mobile{
+                    @apply w-6 h-6 text-white;
+                }
+            }
+            .goal-icon-desktop{
+                @apply hidden p-3 bg-green-200 rounded-full md:block;
+                .icon-mobile{
+                    @apply w-6 h-6 text-white;
+                }
+            }
+            .goal-heading{
+                @apply text-[32px] font-[600] text-center leading-[28.5px] text-[#000000] text-nowrap;
+            }
+            .goal-message-container{
+                @apply flex justify-center text-base;
+                .goal-main-message{
+                    @apply text-center font-[400] text-[#707070] text-[18px] leading-[28.5px];
+                }
+                .goal-button-container{
+                    @apply flex items-center justify-center;
+                    .goal-button{
+                        @apply px-6 py-2 tracking-wide text-white duration-100 transform rounded-lg text-opacity-85 bg-button-color hover:bg-green-500/60 hover:shadow-md hover:shadow-green-400/20 focus:ring-2 focus:ring-green-400 focus:outline-none;
+                    }
+                }
+            }
+        }
+    }
+    /**Testimonials**/
+    /**Testimonials-Mobile**/
+    .testimonial-main-container{
+        @apply flex flex-col;
+        .testimonial-left{
+            @apply flex mt-8 text-sm rounded-sm shrink-0;
+            .testimonial-image{
+                @apply w-16 h-16 rounded-lg;
+            }
+            .testimonial-text-block{
+                @apply flex-col ml-4 space-y-5 leading-8;
+                .testimonial-text-message{
+                    @apply text-gray-500;
+                }
+                .testimonial-text-user{
+                    @apply text-xs font-semibold text-gray-300 uppercase;
+                }
+            }
+        }
+        .testimonial-right{
+            @apply flex mt-8 text-sm rounded-sm shrink-0 mr-2;
+            .testimonial-text-block-2{
+                @apply flex-col mr-4 space-y-5 text-end leading-8;
+                .testimonial-text-message-2{
+                    @apply text-gray-500;
+                }
+                .testimonial-text-user-2{
+                    @apply text-xs font-semibold text-gray-300 uppercase ;
+                }
+            } 
+        }  
+    }
+    
+    .pagination-container{
+        @apply flex items-center justify-center mt-8;
+        .pagination-list{
+            @apply flex space-x-2;
+            .pagination{
+                @apply flex items-center justify-center h-8 px-3 leading-tight text-black active:text-white border border-gray-300 bg-inherit rounded-sm active:bg-main-color hover:bg-gray-100 hover:text-gray-700;
+                .icon-styles{
+                    @apply w-4 h-4;
+                }
+                .screen-reader{
+                    @apply sr-only;
+                }
+            }
+        }
+    }
+    /*Mobile pan section**/
+    .pan-wrapper{
+        @apply flex items-center justify-between space-x-8 overflow-x-auto scrollbar-hidden md:hidden;
+        .pan-items{
+            @apply flex items-center justify-center py-2 text-black border border-[#D8D8D8] h-[40px] w-[140px] rounded-[4px] text-[12px] leading-[20px] px-12;
+        }
+    }
+}

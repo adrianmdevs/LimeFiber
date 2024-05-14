@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <main class="bg-gray-300">
+        <!--Desktop Section-->
+        <section class="hidden md:flex md:flex-col md:container md:mx-auto">
+            <div class="flex">
+                <aside class="w-1/4 h-screen bg-white border-r-2 lg:w-1/5">
+                    <div class="flex flex-col w-full space-y-6">
+                        <div class="flex items-center w-full py-2 pl-4 pr-12 space-x-2 hover:bg-sign-up-prompt-color/60 hover:opacity-60 hover:text-main-color">
+                            <img src="/assets/images/Category.png" alt="">
+                            <p>Dashboard</p>
+                        </div>
+                        <div class="flex items-center py-2 pl-4 space-x-2 hover:bg-sign-up-prompt-color/60 hover:opacity-60 hover:text-main-color">
+                            <img src="/assets/images/Icon.png" alt="">
+                            <p>Users</p>
+                        </div>
+                        <div class="flex items-center py-2 pl-4 space-x-2 hover:bg-sign-up-prompt-color/60 hover:opacity-60 hover:text-main-color">
+                            <img src="/assets/images/ticketstar.png" alt="">
+                            <p>Tickets</p>
+                        </div>
+                        <div class="flex items-center py-2 pl-4 space-x-2 hover:bg-sign-up-prompt-color/60 hover:opacity-60 hover:text-main-color">
+                            <img src="/assets/images/profile2user.png" alt="">
+                            <p>Officials</p>
+                        </div>
+                        <div class="flex items-center py-2 pl-4 space-x-2 hover:bg-sign-up-prompt-color/60 hover:opacity-60 hover:text-main-color">
+                            <img src="/assets/images/setting.png" alt="">
+                            <p>Site Settings</p>
+                        </div>
+                    </div>
+                </aside>
+                <div class="w-2/3 bg-white h-14">
+                    <div class="flex items-center justify-between w-full">
+                        <div class="flex items-center space-x-2">
+                            <img src="/assets/images/align-left.png" alt="">
+                            <p>Welcome! John Doe</p>
+                        </div>
+                        <div class="flex">
+                            <img src="#" alt="">
+                            <div class="flex items-center space-x-3 bg-[#FAFAFA] rounded-2xl">
+                                <img src="/assets/images/Ellipse 73.png" class="w-10 h-10 rounded-full" alt="">
+                                <div class="flex items-center space-x-3">
+                                    <span>John Doe</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>                                  
+                                </div>
+                                <img src="#" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <!-- <div>
+                    <div class="px-8 bg-[#FFFFFF] rounded-md mt-10 mb-52">
+                        <div class="flex items-center justify-between w-full">
+                            <form class="mt-4">
+                                <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
+                                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                        </svg>
+                                    </div>
+                                    <input type="search" id="default-search" class="block w-3/4 p-2.5 text-sm text-gray-900 border border-gray-300 rounded ps-10 bg-gray-50 focus:ring-main-color focus:border-blue-500" placeholder="Search" required>
+                                </div>
+                            </form>
+                            <div class="flex mt-4 space-x-4">
+                                <select name="priority" id="priority" class="px-2 bg-[#E7E7E7] rounded">
+                                    <option value="new_tickets" class="mt-5 text-[#84818A]">New Ticket</option>
+                                    <option value="ongoing_tickets">On-going Tickets</option>
+                                    <option value="resolved_tickets">Resolved Tickets</option>
+                                </select>
+                                <select name="week" id="week" class="px-6 bg-[#E7E7E7] rounded">
+                                    <option value="this_week" class="flex items-center">
+                                        <span class="w-2 h-2 bg-red-300 rounded-full"></span>
+                                        <span>This Week</span>
+                                    </option>
+                                    <option value="last_week">Last Week</option>
+                                    <option value="next_week">Next Week</option>
+                                </select>
+                                <button class="flex items-center px-6 py-2 space-x-2 rounded bg-main-color">
+                                    <img src="/assets/images/message-edit.png" alt="">
+                                    <span class="text-white text-nowrap">New Ticket</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="border-b-2">
+                            <div class="flex justify-between w-3/4 mt-8">
+                                <button class="flex items-center justify-center space-x-2 text-red-600 border-b-2 border-red-500">
+                                    <img src="/assets/images/sms.png" alt="">
+                                    <span>All Tickets</span>
+                                </button>
+                                <button class="flex items-center justify-center space-x-2 active:text-red-600 active:border-b-2 active:border-red-500">
+                                    <img src="/assets/images/sms-star.png" alt="">
+                                    <span>New</span>
+                                </button>
+                                <button class="flex items-center active:text-red-600 active:border-b-2 active:border-red-500">
+                                    <img src="" alt="">
+                                    <span>On-going</span>
+                                </button>
+                                <button class="flex items-center active:text-red-600 active:border-b-2 active:border-red-500">
+                                    <img src="/assets/images/sms-star.png" alt="">
+                                    <span>Resolved</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-8 space-y-5">
+                            <div class="px-4 py-3 space-y-3 border border-gray-300 rounded">
+                                <p class="text-xs text-gray-400 text-end">Posted at 12:45 AM</p>
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-5 h-5 rounded-full bg-ticket-slot-color opacity-60"></span>
+                                    <p class="font-[600] text-ticket-hash-color text-[16px] leading-[14px]">Ticket# 2023-00000</p>
+                                </div>
+                                    <div class="flex flex-col space-y-2">
+                                    <h3 class="text-ticket-hash-color text-[14px] leading-[14px] font-[400]">How to make a purchase? Is there a third party app?</h3>
+                                    <p class="text-ticket-description-color text-[12px] leading-[12px] font-[400]">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet <br>
+                                        consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <div class="border-b"></div>
+                                    <div class="flex items-center space-x-3 border-spacing-3">
+                                        <img src="/assets/images/People.png" alt="">
+                                        <p>Jane Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-4 py-3 space-y-3 border border-gray-300 rounded">
+                                <p class="text-xs text-gray-400 text-end">Posted at 12:45 AM</p>
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-5 h-5 rounded-full bg-[#FF2626] opacity-60"></span>
+                                    <p class="font-[600] text-ticket-hash-color text-[16px] leading-[14px]">Ticket# 2023-00000</p>
+                                </div>
+                                    <div class="flex flex-col space-y-2">
+                                        <h3 class="text-ticket-hash-color text-[14px] leading-[14px] font-[400]">How to make a purchase? Is there a third party app?</h3>
+                                        <p class="text-ticket-description-color text-[12px] leading-[12px] font-[400]">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet <br>
+                                            consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                        <div class="border-b"></div>
+                                        <div class="flex items-center space-x-3 border-spacing-3">
+                                            <img src="/assets/images/People.png" alt="">
+                                            <p>Jane Doe</p>
+                                        </div>
+                                </div>
+                            </div> 
+                            <div class="px-4 py-3 space-y-3 border border-gray-300 rounded">
+                                <p class="text-xs text-gray-400 text-end">Posted at 12:45 AM</p>
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-5 h-5 rounded-full bg-[#54C104] opacity-60"></span>
+                                    <p class="font-[600] text-ticket-hash-color text-[16px] leading-[14px]">Ticket# 2023-00000</p>
+                                </div>
+                                    <div class="flex flex-col space-y-2">
+                                        <h3 class="text-ticket-hash-color text-[14px] leading-[14px] font-[400]">How to make a purchase? Is there a third party app?</h3>
+                                        <p class="text-ticket-description-color text-[12px] leading-[12px] font-[400]">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet
+                                            consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                        <div class="border-b"></div>
+                                        <div class="flex items-center space-x-3 border-spacing-3">
+                                            <img src="/assets/images/People.png" alt="">
+                                            <p>Jane Doe</p>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>       
+                        <nav class="flex items-center justify-center my-8">
+                            <ul class="flex space-x-3">
+                                <li class="flex items-center justify-center h-8 px-3 leading-tight text-white border border-gray-300 bg-main-color hover:bg-gray-100 hover:text-gray-700"><a href="#">1</a></li>
+                                <li class="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 active:bg-main-color active:text-white hover:bg-gray-100 hover:text-gray-700"><a href="#">2</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div> -->
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/output.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+</head>
+<body class="font-Baloo">
+    <header class="md:hidden">
+        <nav class="w-full bg-white border-gray-200 md:container md:mx-auto md:whitespace-nowrap">
+            <div class="flex items-center justify-between flex-nowrap">
+            <a href="#" class="flex items-center space-x-3">
+                <img src="/assets/logo/logo (1).svg" class="hidden md:w-2/3 lg:w-full md:flex h-28 bg-inherit" alt="LimeFiber">
+                <span class="sr-only">LimeFiber</span>
+                <img src="/assets/logo/logo (1).svg" class="w-32 h-20 md:hidden bg-inherit" alt="LimeFiber">
+                <span class="sr-only">LimeFiber</span>
+            </a>
+            <div class="flex items-center space-x-3 whitespace-nowrap md:order-2 md:space-x-0">
+                <div class="hidden md:pb-8 md:space-x-2 md:block">
+                    <button type="button" class="px-6 py-3 text-sm font-normal text-center text-black rounded-lg bg-inherit hover:text-slate-400">Log In</button>
+                    <button type="button" class="px-6 py-3 text-sm font-normal text-center text-gray-100 rounded-lg bg-main-color hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300">Sign Up</button>
+                </div>
+                <div class="flex md:hidden" id="openAccount">
+                    <span class="sr-only">Account</span>
+                   <img src="/assets/icons/Icon (5).svg" alt="" class="w-6 h-6">
+                </div>
+                <button type="button" id="openNavMenu" class="w-10 h-10 p-2 text-sm text-gray-500 rounded-lg inline-goal-button-container md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                  <span class="sr-only">Open main menu</span>
+                 <img src="/assets/icons/Group.svg" class="w-6 h-6" alt="">
+              </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:pb-8 md:flex md:w-auto md:order-1">
+              <ul class="flex flex-col p-4 mt-4 font-normal border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white ">
+                <li>
+                  <a href="#" aria-current="page" class="block px-3 py-2 text-red-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500" >Home</a>
+                </li>
+                <li>
+                    <a href="/src/index.html" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-900 md:hover:text-green-700 md:p-0 md:active:text-red-500">Services</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">About Us</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <form class="mx-3 md:hidden">   
+        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+            </div>
+            <input type="search" id="default-search" class="block w-full p-3 text-sm bg-gray-200 rounded text-privacy-text-color ps-10 focus:ring-main-color focus:border-main-color" placeholder="Search" required />
+        </div>
+    </form>
+    <!--Requires Js-->
+    <main class="flex flex-col justify-between min-h-screen font-Baloo Da 2">
+        <section class="mx-3 md:hidden">
+            <div class="flex flex-col space-y-12">
+                <h2 class="my-6 text-xl">Help</h2>
+                <ul class="flex flex-col mb-3 space-y-12">
+                    <li class="flex flex-col justify-between pb-5 border-b-2 rounded">
+                       <button class="flex items-center justify-between w-full" id="accordionButton">
+                         <div class="flex items-center space-x-2">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.2015 0.29847L10.1768 0.323155L10.2015 0.29847C10.1751 0.272005 10.1436 0.251013 10.1091 0.236691C10.0745 0.222369 10.0374 0.214999 10 0.215H1.5C1.42441 0.215 1.35192 0.245027 1.29847 0.298475C1.24503 0.351922 1.215 0.424413 1.215 0.5V15.5C1.215 15.5756 1.24503 15.6481 1.29847 15.7015C1.35192 15.755 1.42441 15.785 1.5 15.785H12C12.0756 15.785 12.1481 15.755 12.2015 15.7015C12.255 15.6481 12.285 15.5756 12.285 15.5V15.0215C13.031 14.9502 13.7248 14.6058 14.2326 14.0537C14.7477 13.4937 15.0341 12.7609 15.035 12V12C15.0341 11.2391 14.7477 10.5063 14.2326 9.9463C13.7248 9.39422 13.031 9.04976 12.285 8.97851V2.5C12.285 2.46257 12.2776 2.42551 12.2633 2.39093C12.249 2.35636 12.228 2.32494 12.2015 2.29847L10.2015 0.29847ZM10.285 2.215V1.18803L11.312 2.215H10.285ZM1.785 15.215V0.785H9.715V2.5C9.715 2.57559 9.74503 2.64808 9.79847 2.70153C9.85192 2.75497 9.92441 2.785 10 2.785H11.715V8.97848C10.9688 9.04905 10.2747 9.39333 9.76681 9.94559C9.25168 10.5057 8.96578 11.239 8.96578 12C8.96578 12.761 9.25168 13.4943 9.76681 14.0544C10.2747 14.6067 10.9688 14.9509 11.715 15.0215V15.215H1.785ZM12 14.465C11.5124 14.465 11.0359 14.3204 10.6305 14.0496C10.2252 13.7787 9.90921 13.3937 9.72264 12.9433C9.53607 12.4929 9.48725 11.9973 9.58236 11.5191C9.67748 11.0409 9.91225 10.6017 10.257 10.257C10.6017 9.91225 11.0409 9.67748 11.5191 9.58236C11.9973 9.48725 12.4929 9.53607 12.9433 9.72264C13.3937 9.90921 13.7787 10.2252 14.0496 10.6305C14.3204 11.0359 14.465 11.5124 14.465 12C14.4643 12.6535 14.2043 13.2801 13.7422 13.7422C13.2801 14.2043 12.6535 14.4643 12 14.465Z" fill="black" stroke="black" stroke-width="0.07"/>
+                                <path d="M12.2015 13.2016L12.2015 13.2016C12.1566 13.2466 12.0979 13.2752 12.0348 13.2829C11.9717 13.2907 11.9078 13.2771 11.8534 13.2444L10.6034 12.4944C10.5713 12.4751 10.5433 12.4498 10.521 12.4197C10.4987 12.3896 10.4826 12.3554 10.4735 12.3191C10.4644 12.2828 10.4626 12.2451 10.4681 12.2081C10.4736 12.171 10.4864 12.1355 10.5056 12.1034C10.5249 12.0713 10.5503 12.0433 10.5803 12.021C10.6104 11.9987 10.6446 11.9826 10.6809 11.9735C10.7172 11.9644 10.7549 11.9626 10.7919 11.9681C10.829 11.9736 10.8645 11.9864 10.8966 12.0056L11.9558 12.6411L13.5485 11.0485C13.5749 11.022 13.6064 11.001 13.6409 10.9867C13.6755 10.9724 13.7126 10.965 13.75 10.965C13.7874 10.965 13.8245 10.9724 13.8591 10.9867L12.2015 13.2016ZM12.2015 13.2016L13.9515 11.4516C13.978 11.4252 13.999 11.3937 14.0133 11.3592C14.0277 11.3246 14.0351 11.2875 14.0351 11.2501C14.0351 11.2126 14.0277 11.1755 14.0133 11.141C13.999 11.1064 13.978 11.0749 13.9515 11.0485L12.2015 13.2016Z" fill="black" stroke="black" stroke-width="0.07"/>
+                            </svg>
+                            <span>Terms of service</span> 
+                         </div>
+                            <svg class="w-3 h-4" id="accordionIcon" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
+                            </svg>
+                       </button>
+                       <div class="hidden px-2" id="accordionContent">
+                        <p class="px-2 text-gray-600">lorem ipsum sit dolor amet consectetur adipisicing elit...</p>
+                       </div>
+                    </li>
+                    <li class="flex flex-col justify-between rounded">
+                        <button class="flex items-center justify-between w-full " id="accordionButton">
+                          <div class="flex items-center space-x-2">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_555_1329)">
+                                <path d="M7.99466 15.9998C7.942 15.9998 7.88866 15.9872 7.84066 15.9618L0.179333 11.9618C0.0693333 11.9045 0 11.7905 0 11.6665V4.1665C0 4.05116 0.06 3.94383 0.158 3.88316C0.256 3.8225 0.379333 3.81716 0.482 3.8685L8.14333 7.70183C8.256 7.7585 8.32733 7.87383 8.32733 7.99983V15.6665C8.32733 15.7832 8.26666 15.8912 8.16667 15.9518C8.11467 15.9838 8.05466 15.9998 7.99466 15.9998ZM0.666667 11.4645L7.66133 15.1165V8.20583L0.666667 4.70583V11.4645Z" fill="black"/>
+                                <path d="M8.00521 15.9998C7.94521 15.9998 7.88521 15.9838 7.83254 15.9518C7.73321 15.8912 7.67188 15.7832 7.67188 15.6665V7.99984C7.67188 7.87384 7.74321 7.75851 7.85588 7.70184L15.5172 3.86851C15.6192 3.81651 15.7432 3.82184 15.8412 3.88317C15.9399 3.94384 15.9999 4.05117 15.9999 4.16651V11.6665C15.9999 11.7905 15.9305 11.9045 15.8205 11.9618L8.15921 15.9618C8.11121 15.9872 8.05788 15.9998 8.00521 15.9998ZM8.33854 8.20584V15.1165L15.3332 11.4645V4.70584L8.33854 8.20584ZM15.6665 11.6665H15.6732H15.6665Z" fill="black"/>
+                                <path d="M0.33305 4.50015C0.210383 4.50015 0.0930497 4.43282 0.034383 4.31615C-0.0482837 4.15149 0.0190496 3.95149 0.183716 3.86882L7.85572 0.0354883C7.94972 -0.0111784 8.06038 -0.0111784 8.15372 0.0354883L15.8151 3.86882C15.9797 3.95149 16.0464 4.15149 15.9644 4.31615C15.8817 4.48082 15.6824 4.54682 15.5171 4.46549L8.00505 0.706155L0.482383 4.46482C0.434383 4.48882 0.383716 4.50015 0.33305 4.50015Z" fill="black"/>
+                                <path d="M12.0002 9.99978C11.8162 9.99978 11.6669 9.85045 11.6669 9.66645V6.20578L4.18953 2.46445C4.02487 2.38245 3.9582 2.18178 4.04087 2.01712C4.12353 1.85245 4.32353 1.78645 4.4882 1.86778L12.1495 5.70112C12.2622 5.75845 12.3335 5.87378 12.3335 5.99978V9.66645C12.3335 9.85045 12.1842 9.99978 12.0002 9.99978Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_555_1329">
+                                <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                             <span>Product Information</span> 
+                          </div>
+                             <svg class="w-3 h-4" id="accordionIcon" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
+                             </svg>
+                        </button>
+                        <div class="hidden px-2" id="accordionContent">
+                         <p class="px-2 text-gray-600">lorem ipsum sit dolor amet consectetur adipisicing elit...</p>
+                        </div>
+                     </li>
+                     
+                     <li class="flex flex-col justify-between rounded">
+                        <button class="flex items-center justify-between w-full " id="accordionButton">
+                          <div class="flex items-center space-x-2">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.0769 6.07412H12.8573V4.88103C12.8571 2.18528 10.6793 0.00021875 8.00001 0C5.3207 0.00021875 3.13664 2.18528 3.13642 4.881V6.07409H1.92304C1.47742 6.07409 1.11279 6.44097 1.11279 6.88941V15.1847C1.11279 15.6332 1.47739 16 1.92304 16H14.077C14.5226 16 14.8872 15.6331 14.8872 15.1847V6.88944C14.8872 6.44094 14.5226 6.07412 14.0769 6.07412ZM3.74411 4.881C3.74432 3.70106 4.23107 2.63559 4.99942 1.86197C5.76839 1.08897 6.82717 0.611719 8.00004 0.611531C9.1727 0.61175 10.2317 1.08897 11.0005 1.86197C11.769 2.63559 12.2495 3.70106 12.2497 4.881V6.07409H3.74411V4.881ZM14.077 15.3885H1.92304C1.81326 15.3885 1.72048 15.2951 1.72048 15.1847V6.88944C1.72048 6.77903 1.81326 6.68566 1.92304 6.68566H14.077C14.1867 6.68566 14.2795 6.77884 14.2795 6.88944V15.1847H14.2795C14.2795 15.2951 14.1867 15.3885 14.077 15.3885Z" fill="black"/>
+                                <path d="M8 9.27393C7.21666 9.27393 6.58203 9.91261 6.58203 10.7006C6.58203 11.3837 7.05887 11.9537 7.69616 12.0936V13.554C7.69616 13.7229 7.83228 13.8596 8 13.8596C8.16772 13.8596 8.30384 13.7229 8.30384 13.554V12.0936C8.94109 11.9536 9.41797 11.3834 9.41797 10.7006C9.41794 9.91277 8.78331 9.27393 8 9.27393ZM8 11.5161C7.55313 11.5161 7.18975 11.1502 7.18975 10.7008C7.18975 10.2513 7.55316 9.88546 8 9.88546C8.44687 9.88546 8.81025 10.2513 8.81025 10.7008C8.81025 11.1502 8.44684 11.5161 8 11.5161Z" fill="black"/>
+                            </svg>                            
+                             <span>Privacy Policy</span> 
+                          </div>
+                             <svg class="w-3 h-4" id="accordionIcon" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
+                             </svg>
+                        </button>
+                        <div class="hidden px-2" id="accordionContent">
+                         <p class="px-2 text-gray-600">lorem ipsum sit dolor amet consectetur adipisicing elit...</p>
+                        </div>
+                     </li>
+                     <li class="flex flex-col justify-between pb-5 border-b-2 rounded">
+                        <button class="flex items-center justify-between w-full " id="accordionButton">
+                          <div class="flex items-center space-x-2">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.13942 5.65934L2.18642 5.7181L2.20108 5.64429C2.83349 2.45987 5.64751 0.050625 9.01569 0.050625C12.8474 0.050625 15.965 3.16824 15.965 6.99995C15.965 10.82 12.8664 13.9303 9.05069 13.9492V12.9447C12.3125 12.9258 14.9605 10.2661 14.9605 6.99995C14.9605 3.72214 12.2935 1.05513 9.01569 1.05513C6.04854 1.05513 3.5902 3.24178 3.14813 6.0866L3.13772 6.1536L3.19837 6.12328L5.53582 4.9548L5.98535 5.85336L2.79323 7.44944C2.72133 7.48511 2.64448 7.5022 2.56862 7.5022C2.41994 7.5022 2.27427 7.4359 2.17633 7.31382L0.0491914 4.6549L0.833724 4.02708L2.13942 5.65934Z" fill="black" stroke="white" stroke-width="0.07"/>
+                            </svg>                        
+                             <span>Return & Exchanges</span> 
+                          </div>
+                             <svg class="w-3 h-4" id="accordionIcon" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
+                             </svg>
+                        </button>
+                        <div class="hidden px-2" id="accordionContent">
+                         <p class="px-2 text-gray-600">lorem ipsum sit dolor amet consectetur adipisicing elit...</p>
+                        </div>
+                     </li>
+                  
+                </ul>
+                <button class="py-2 my-6 border-2 rounded border-main-color">Contact LimeFiber</button>
+            </div>
+        </section>
+    </main>
+    <footer class="md:hidden">
+        <!--Desktop View-->
+        <div class="hidden md:block">
+            <div class="flex flex-wrap justify-between gap-3 mx-3">
+                <ul class="flex space-x-10 text-xs uppercase whitespace-nowrap">
+                    <li class="text-[#707070] font-[400] text-[12px] leading-[20px]">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="text-[#707070] font-[400] text-[12px] leading-[20px]">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="text-[#707070] font-[400] text-[12px] leading-[20px]">
+                        <a href="#">Terms of Service</a>
+                    </li>
+                </ul>
+                <div class="flex space-x-14 md:border-gray-500 md:border-b-2 md:text-sm">
+                    <a href="#" class="text-gray-600">Subscribe to our newsletters</a>
+                    <a href="#" class="text-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mb-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>         
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-between gap-0 mr-3">
+                <div class="inline-flex items-center justify-between space-x-3 whitespace-nowrap">
+                    <div>
+                        <img src="/assets/logo/logo (1).svg" class="w-36 h-28" alt="">
+                    </div>
+                    <span> <span class="hover:underline hover:cursor-pointer"> © 2024 LimeFiber.</span>All rights reserved.</span>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-4 h-4" viewBox="0 0 50 50">
+                            <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"></path>
+                            </svg>
+                        <span class="sr-only">LinkedIn account</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-900">
+                          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                                <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                            </svg>
+                          <span class="sr-only">Facebook page</span>
+                      </a>
+                      <a href="#" class="text-gray-400 hover:text-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-4 h-4" viewBox="0 0 50 50">
+                                <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                            </svg>
+                        <span class="sr-only">Instagram account</span>
+                        </a>
+                      <a href="#" class="text-gray-400 hover:text-gray-900">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                          <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                      </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Mobile View-->
+        <div class="flex flex-col mx-3 mb-8 md:hidden">
+            <div class="flex flex-col my-2 divide-y-2 divide-black">
+                <div class="flex justify-between">
+                    <p class="mb-2 text-[#707070] text-[12px] leading-[20px]">Subscribe to our Newsletters</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+                <div class="flex space-x-1 whitespace-nowrap">
+                    <input type="checkbox" name="checkbox" id="checkbox-main" class="w-[13px] h-[13px] rounded-[2px] border-[1px] border-[#707070] mt-[10px] bg-inherit text-button-color">
+                    <p class="mt-2 text-[12px] leading-[20px] font-[400]">I agree to the website's terms and conditions</p>
+                </div>
+            </div>
+            <!--Logo-->
+            <div class="flex flex-row items-start mt-4">
+                <ul class="flex flex-col gap-4 text-[15px] text-[#707070] uppercase text-nowrap">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+                <div class="flex ml-8 basis-1/2">
+                    <img src="/assets/logo/logo (1).svg" alt="LimeFiber" class="w-full h-auto m-4 grow-0">
+                </div>
+            </div>
+            <!--Socials-->
+            <div class="flex w-3/4 mt-8 space-x-6 divide-y divide-black">
+                <div class="ml-6">
+                    <p>Socials!</p>
+                </div>
+                <div class="flex border-b border-black"></div>
+                <div class="flex space-x-3">
+                    <img src="/assets/icons/Icon color (6).svg" alt="">
+                    <img src="/assets/icons/Icon color (7).svg" alt="">
+                    <img src="/assets/icons/Icon color (8).svg" alt="">
+                </div>
+            </div>
+            <div class="text-[#707070] text-sm leading-[20px] mt-10">
+                <p> <span><a href="#">© 2024 LimeFiber.</a></span></a>All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="Main.js"></script>
+</html>
