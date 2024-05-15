@@ -72,7 +72,7 @@
     /***Services and Landing Page( second edition) Styles*/
 
     .heading-section{
-        @apply font-[400] text-[14px] leading-[28.5px] text-[#8A898E] tracking-[6px] uppercase;
+        @apply font-[400] text-[12px] leading-[28.5px] text-[#8A898E] tracking-[6px] uppercase;
     }
     .heading-subsection{
         @apply text-4xl font-medium text-gray-800;

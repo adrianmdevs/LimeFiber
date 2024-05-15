@@ -32,7 +32,9 @@ module.exports = {
         'secondary-button-color': '#EBEAED',
         'news-section-background':'#F0FFFF',
         'sect-identifier':'#8A898E',
-        'package-desc-color':'#331B3B'
+        'package-desc-color':'#331B3B',
+        'overlay-color':'#605F5F',
+        'price-color':'#6B6B6B'
     },
     aspectRatio:{
       '16/9':'16/9',

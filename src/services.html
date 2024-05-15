@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/src/custom.css">
-    <link rel="stylesheet" href="/src/scroll.css">
     <link rel="stylesheet" href="/public/output.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
 </head>
-<body class="flex flex-col font-Baloo">
+<body class="flex flex-col space-y-8 font-Baloo">
     <header class="md:container md:mx-auto">
         <nav class="w-full bg-white border-gray-200 md:container md:mx-auto md:whitespace-nowrap">
             <div class="flex items-center justify-between flex-nowrap">
@@ -35,21 +34,24 @@
             <div class="items-center justify-between hidden w-full md:pb-8 md:flex md:w-auto md:order-1">
               <ul class="flex flex-col p-4 mt-4 font-normal border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white ">
                 <li>
-                  <a href="#" aria-current="page" class="block px-3 py-2 text-red-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500" >Home</a>
+                  <a href="#" aria-current="page" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500" >Home</a>
                 </li>
                 <li>
-                    <a href="/src/index.html" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-900 md:hover:text-green-700 md:p-0 md:active:text-red-500">Services</a>
+                    <a href="#" class="block px-3 py-2 text-red-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-red-500 md:hover:text-green-700 md:p-0 md:active:text-red-500">Services</a>
                 </li>
                 <li>
-                  <a href="/src/about.html" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">About Us</a>
+                  <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">About Us</a>
                 </li>
                 <li>
-                  <a href="/src/contact.html" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">Contacts</a>
+                  <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">Contacts</a>
                 </li>
               </ul>
             </div>
             </div>
         </nav>
+        <div class="hidden md:block md:border-b-2 md:text-center md:border-gray-300">
+            <h1 class="mb-5 text-3xl font-[500]">LimeFiber Packages</h1>
+          </div>
     </header>
     <main class="min-h-screen">
         <!--Search bar and packages and Products:Mobile-Only-->
@@ -73,9 +75,9 @@
                     <div class="flex items-center justify-center py-2 text-black border border-[#D8D8D8] h-[40px] w-[140px] rounded-[4px] text-[12px] leading-[20px] px-12">Services</div>
                 </div>
             </div>
-            <div class="flex items-center justify-center mx-3 my-6 whitespace-nowrap opacity-90">
+            <!-- <div class="flex items-center justify-center mx-3 my-6 whitespace-nowrap opacity-90">
                 <p class="text-[17px] leading-[20.21px] font-normal max-sm:text-wrap">Discover the best LimeFiber home packages!</p>
-            </div>
+            </div> -->
             <!--Table:Both-->
             <div class="relative mx-2 overflow-auto md:container md:mx-auto">
                 <table class="w-full text-xs bg-white table-auto whitespace-nowrap md:text:sm">
@@ -730,12 +732,12 @@
         <!--Coverage section-->
         <section class="mt-2 md:container md:mx-auto">
             <!--Desktop View &-->
-            <div class="hidden md:block">
-                <div class="flex justify-center mb-8 text-xl font-medium text-black whitespace-nowrap">
+            <div class="hidden mt-20 md:block">
+                <div class="flex justify-center mb-8 text-2xl font-medium text-black whitespace-nowrap">
                     <p>-LimeFiber Coverage-</p>
                 </div>
                 <div class="container flex flex-row mx-auto bg-white">
-                    <div class="flex flex-col items-start p-8 m-2 space-y-4 whitespace-normal rounded-md bg-inherit md:w-1/2">
+                    <div class="flex flex-col items-start justify-between p-8 m-2 space-y-4 whitespace-normal rounded-md bg-inherit md:w-1/2">
                         <h2 class="text-xl font-medium tracking-wide">Get started today! Only at <br> LimeFibre</h2>
                         <p class="opacity-50">Find out if your area is Home Fiber
                             Ready! <br> To begin click the button 
@@ -751,6 +753,7 @@
                         <img src="/assets/images/Video Player (3).png" class="sm:w-1/2 lg:w-1/2 xl:w-1/2" alt="" loading="lazy">
                 </div>
             </div>
+            <div class="hidden md:border-b-2"></div>
             <!--Mobile View-->
             <div class="md:hidden">
                 <div class="flex flex-col">

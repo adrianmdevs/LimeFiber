@@ -34,10 +34,10 @@
           <div class="items-center justify-between hidden w-full md:pb-8 md:flex md:w-auto md:order-1">
             <ul class="flex flex-col p-4 mt-4 font-normal border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white ">
               <li>
-                <a href="#" aria-current="page" class="block px-3 py-2 text-red-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500" >Home</a>
+                <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500" >Home</a>
               </li>
               <li>
-                  <a href="/src/index.html" class="block px-3 py-2 text-red-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-900 md:hover:text-green-700 md:p-0 md:active:text-red-500">Services</a>
+                  <a href="#" class="block px-3 py-2 text-red-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-red-500 md:hover:text-green-700 md:p-0 md:active:text-red-500">Services</a>
               </li>
               <li>
                 <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">About Us</a>
@@ -50,76 +50,80 @@
           </div>
       </nav>
       <div class="hidden md:block md:border-b-2 md:text-center md:border-gray-300">
-        <h1 class="mb-5 text-3xl font-[500]">LimeFiber Products, Sales Ongoing</h1>
+        <h1 class="mb-5 text-3xl font-medium">LimeFiber Products, Sales Ongoing!</h1>
       </div>
     </header>
     <main class="min-h-screen mb-20 font-Baloo Da 2">
         <!--Desktop View-->
-        <section class="hidden max-w-6xl md:block md:container md:mx-auto">
+        <section class="hidden max-w-6xl md:block md:container md:mx-auto xl:max-w-6xl xl:flex xl:flex-col xl:justify-evenly">
           <!--Top section-->
-          <div class="flex flex-cols-2">
-            <aside class="flex flex-col mt-3 space-y-4">
+          <div class="flex w-full mt-10 flex-cols-2">
+            <aside class="flex flex-col mt-3 space-y-6 md:w-1/4">
               <!--Search bar floats-->
               <div class="relative z-0">
                 <input type="text" id="floating_standard" class="block w-full px-0 py-2 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-main-color peer" placeholder=" " />
                 <label for="floating_standard" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Search</label>
-                <svg type="submit" class="absolute right-0 w-4 h-4 text-gray-500 bottom-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <svg type="submit" class="absolute right-0 w-6 h-6 text-gray-500 bottom-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
                 </svg>   
               </div>
               <!--Select Boxes-->
-              <div class="flex flex-col space-y-8">
-                <select name="shop" id="shop" class="py-2 border rounded">
+              <div class="flex flex-col space-y-6">
+                <select name="shop" id="shop" class="py-2 bg-white border rounded">
                   <option value="disabled selected">Shop By</option>
                   <option value="sort">Value</option>
                   <option value="sort">Price</option>
                   <option value="sort">Type</option> 
               </select>
-              <select name="sort_by" id="sort" class="py-2 border rounded">
+              <select name="sort_by" id="sort" class="py-2 bg-white border rounded">
                   <option value="disabled selected" class="">Sort By</option>
                   <option value="sort" class="bg-white text-main-color">Price</option>
                   <option value="sort" class="bg-white text-main-color">Type</option>
                   <option value="sort" class="bg-white text-main-color">Value</option>
               </select>
               </div>
-              <!--range-->
+              <!--Range-->
               <div class="flex flex-col space-y-3">
-                <input id="steps-range" type="range" min="10" max="50" value="2.5" step="0.5" class="w-full h-1 bg-gray-200 rounded-none appearance-none cursor-pointer">
-                <label for="steps-range" class="block text-sm font-light text-gray-900">Pricing</label>
-                <p class="text-xs text-end active:text-red-500"> <a href="#">filter</a></p>
+                <input id="steps-range" type="range" min="0" max="50,00" value="20" step="2.0" class="w-full h-2 bg-gray-200 rounded-none appearance-none cursor-pointer">
+                <div class="flex justify-between text-privacy-text-color">
+                  <p>Price ksh.5,000 - Ksh.30,000</p>
+                  <p class="text-sign-up-prompt-color"><a href="#">Filter</a></p>
+                </div>
               </div>
               <!--Toggle boxes-->
               <div class="flex flex-col">
-                <div class="flex flex-col my-5 space-y-8">
+                <div class="flex flex-col my-5 space-y-14">
                     <div class="flex justify-between">
-                        <p>On sale</p>
+                        <p class="font-normal">On Sale</p>
                         <label class="inline-flex items-center cursor-pointer">
                             <input type="checkbox" value="" class="sr-only peer">
-                            <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-main-color rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-main-color"></div>
+                            <div class="relative w-11 h-6 bg-privacy-text-color peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-main-color rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-main-color"></div>
                         </label>
                     </div>
                     <div class="flex justify-between">
-                        <p>In stock</p>
+                        <p class="font-normal">In Stock</p>
                         <label class="inline-flex items-center cursor-pointer">
                             <input type="checkbox" value="" class="sr-only peer">
-                            <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-main-color rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-main-color"></div>
+                            <div class="relative w-11 h-6 bg-privacy-text-color peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-main-color rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-main-color"></div>
                         </label>
                     </div>
                 </div>
               </div>
             </aside>
-            <!--Main Container >> Items + pagination + home services section-->
             <div class="w-full max-w-6xl">
+              <div class="flex justify-end font-normal text-privacy-text-color">
+                <p>Showing 1 -16 of 32 items</p>
+              </div>
               <div class="grid grid-cols-3 mt-10 mb-5 ml-10 gap-x-3 gap-y-5">
                 <!--Item 1-->
                 <div class="relative z-0 flex flex-col">
-                  <p><span class="absolute z-10 p-1 text-center text-white bg-red-500 rounded">-20%</span></p>
+                  <span class="absolute z-10 p-1 text-center text-white bg-red-500 rounded">-20%</span>
                   <div class="relative w-full">
                     <img src="/assets/images/Rectangle 27.png" alt="" class="w-full h-auto">
-                    <div class="absolute inset-0 z-20 mb-2 bg-gray-800 pt-20 left-0.5 bottom-0.5 bg-opacity-50" id="productOptions">
+                    <div class="absolute inset-0 z-20 mb-2 hidden bg-gray-800 pt-20 left-0.5 bottom-0.5 bg-opacity-50" id="productOptions">
                       <div class="flex flex-col items-center justify-center">
                         <div class="space-y-3">
-                          <a href="/src/sp.html" class="flex items-center px-2 py-2 bg-white text-main-color">
+                          <a href="/src/sp.html" class="flex items-center px-5 py-2 bg-white text-main-color">
                             <span>View Product</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
                               <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -158,7 +162,7 @@
                     </div>
                   </div>
                   <div class="flex flex-col items-center space-y-1">
-                    <p>Lorem Ipsum</p>
+                    <p class="font-medium">Lorem Ipsum</p>
                     <div class="flex items-center">
                       <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
@@ -181,9 +185,52 @@
                 </div>
                 <!--Item 2-->
                 <div class="flex flex-col">
-                  <img src="/assets/images/Rectangle 27.png" alt="" class="w-full h-auto">
+                  <div class="relative w-full">
+                    <img src="/assets/images/Rectangle 30.png" alt="" class="w-full h-auto">
+                    <div class="absolute inset-0 z-20 mb-2 bg-overlay-color pt-20 left-0.5 bottom-0.5 bg-opacity-50" id="productOptions">
+                      <div class="flex flex-col items-center justify-center">
+                        <div class="space-y-7">
+                          <a href="/src/sp.html" class="flex items-center px-5 py-2 bg-white text-main-color">
+                            <span>View Product</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                          </a>
+                          <div class="flex justify-between">
+                            <a href="#" class="flex items-center space-x-1 text-white">
+                              <svg width="14" height="14" viewBox="0 0 14 14" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_547_812)">
+                                <path d="M12.9701 2.3333C12.9701 3.38037 12.1213 4.2292 11.0743 4.2292C10.0272 4.2292 9.17847 3.38037 9.17847 2.3333C9.17847 1.28633 10.0272 0.4375 11.0743 0.4375C12.1213 0.4375 12.9701 1.28633 12.9701 2.3333Z" fill=""/>
+                                <path d="M11.0743 4.6667C9.7874 4.6667 8.74097 3.62016 8.74097 2.3333C8.74097 1.04654 9.7874 0 11.0743 0C12.3611 0 13.4076 1.04654 13.4076 2.3333C13.4076 3.62016 12.3611 4.6667 11.0743 4.6667ZM11.0743 0.875C10.2699 0.875 9.61597 1.52954 9.61597 2.3333C9.61597 3.13716 10.2699 3.7917 11.0743 3.7917C11.8787 3.7917 12.5326 3.13716 12.5326 2.3333C12.5326 1.52954 11.8787 0.875 11.0743 0.875Z" fill="black"/>
+                                <path d="M12.9701 11.6669C12.9701 12.7139 12.1213 13.5627 11.0743 13.5627C10.0272 13.5627 9.17847 12.7139 9.17847 11.6669C9.17847 10.6198 10.0272 9.771 11.0743 9.771C12.1213 9.771 12.9701 10.6198 12.9701 11.6669Z" fill="white"/>
+                                <path d="M11.0743 14.0002C9.7874 14.0002 8.74097 12.9537 8.74097 11.6669C8.74097 10.38 9.7874 9.3335 11.0743 9.3335C12.3611 9.3335 13.4076 10.38 13.4076 11.6669C13.4076 12.9537 12.3611 14.0002 11.0743 14.0002ZM11.0743 10.2085C10.2699 10.2085 9.61597 10.863 9.61597 11.6669C9.61597 12.4707 10.2699 13.1252 11.0743 13.1252C11.8787 13.1252 12.5326 12.4707 12.5326 11.6669C12.5326 10.863 11.8787 10.2085 11.0743 10.2085Z" fill="black"/>
+                                <path d="M4.80342 6.9998C4.80342 8.04687 3.95459 8.8956 2.90752 8.8956C1.86055 8.8956 1.01172 8.04687 1.01172 6.9998C1.01172 5.95273 1.86055 5.104 2.90752 5.104C3.95459 5.104 4.80342 5.95273 4.80342 6.9998Z" fill="white"/>
+                                <path d="M2.90752 9.3331C1.62076 9.3331 0.574219 8.28667 0.574219 6.9998C0.574219 5.71294 1.62076 4.6665 2.90752 4.6665C4.19438 4.6665 5.24092 5.71294 5.24092 6.9998C5.24092 8.28667 4.19438 9.3331 2.90752 9.3331ZM2.90752 5.5415C2.10312 5.5415 1.44922 6.19594 1.44922 6.9998C1.44922 7.80366 2.10312 8.4581 2.90752 8.4581C3.71202 8.4581 4.36592 7.80366 4.36592 6.9998C4.36592 6.19594 3.71202 5.5415 2.90752 5.5415Z" fill="black"/>
+                                <path d="M4.28484 6.72004C4.08179 6.72004 3.88462 6.6144 3.77727 6.42545C3.61802 6.14603 3.71607 5.7896 3.99549 5.62971L9.40817 2.54392C9.68758 2.38349 10.044 2.48154 10.2039 2.76203C10.3632 3.04145 10.2651 3.39788 9.9857 3.55778L4.57291 6.64356C4.48191 6.69547 4.38279 6.72004 4.28484 6.72004Z" fill="white"/>
+                                <path d="M9.69697 11.5324C9.59892 11.5324 9.4998 11.5079 9.40879 11.456L3.99602 8.37016C3.7166 8.21091 3.61866 7.85448 3.77791 7.57442C3.93653 7.29446 4.29349 7.19588 4.57355 7.35631L9.98632 10.4421C10.2657 10.6014 10.3637 10.9578 10.2044 11.2378C10.0966 11.4268 9.89938 11.5324 9.69697 11.5324Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_547_812">
+                                <rect width="14" height="14" fill="white"/>
+                                </clipPath>
+                                </defs>
+                              </svg>
+                              <span>Share</span>
+                            </a>
+                            <a href="#" class="flex items-center space-x-1 text-white">
+                              <svg class="w-5 h-5" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.9199 33.0136L17.9192 33.0129C13.6177 29.1124 10.0874 25.9066 7.6267 22.8961C5.17146 19.8923 3.83331 17.144 3.83331 14.1667C3.83331 9.2934 7.64219 5.5 12.5 5.5C15.2488 5.5 17.8954 6.78223 19.6206 8.79231L20 9.23438L20.3794 8.79231C22.1046 6.78223 24.7511 5.5 27.5 5.5C32.3578 5.5 36.1666 9.2934 36.1666 14.1667C36.1666 17.144 34.8285 19.8923 32.3733 22.8961C29.9125 25.9066 26.3823 29.1124 22.0808 33.0129L22.0801 33.0136L20 34.9072L17.9199 33.0136Z" fill="white" stroke="white"/>
+                            </svg>
+                            <span>Like</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>                 
+                    </div>
+                  </div>
+                 
                   <div class="flex flex-col items-center space-y-1">
-                    <p>Lorem Ipsum</p>
+                    <p class="font-medium">Lorem Ipsum</p>
                     <div class="flex items-center">
                       <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
@@ -201,14 +248,14 @@
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                       </svg>
                     </div>
-                    <p class="text-main-color">Ksh. 5000</p>
+                    <p class="text-price-color">Ksh. 5000</p>
                   </div>
                 </div>
                 <!--Item 3-->
                 <div class="flex flex-col">
                   <img src="/assets/images/Rectangle 26 (1).png" alt="" class="w-full h-auto">
                   <div class="flex flex-col items-center space-y-1">
-                    <p>Lorem Ipsum</p>
+                    <p class="font-medium">Lorem Ipsum</p>
                     <div class="flex items-center">
                       <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
@@ -226,14 +273,14 @@
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                       </svg>
                     </div>
-                    <p class="text-main-color">Ksh. 5000</p>
+                    <p class="text-price-color">Ksh. 5000</p>
                   </div>
                 </div>
                 <!--Item-4-->
                 <div class="flex flex-col">
                   <img src="/assets/images/Rectangle 30.png" alt="" class="w-full h-auto">
                   <div class="flex flex-col items-center space-y-1">
-                    <p>Lorem Ipsum</p>
+                    <p class="font-medium">Lorem Ipsum</p>
                     <div class="flex items-center">
                       <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
@@ -251,14 +298,14 @@
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                       </svg>
                     </div>
-                    <p class="text-main-color">Ksh. 5000</p>
+                    <p class="text-price-color">Ksh. 5000</p>
                   </div>
                 </div>
                 <!--Item 5-->
                 <div class="flex flex-col">
                   <img src="/assets/images/Rectangle 26 (1).png" alt="" class="w-full h-auto">
                   <div class="flex flex-col items-center space-y-1">
-                    <p>Lorem Ipsum</p>
+                    <p class="font-medium">Lorem Ipsum</p>
                     <div class="flex items-center">
                       <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
@@ -276,14 +323,14 @@
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                       </svg>
                     </div>
-                    <p class="text-main-color">Ksh. 5000</p>
+                    <p class="text-price-color">Ksh. 5000</p>
                   </div>
                 </div>
                 <!--Item 6-->
                 <div class="flex flex-col">
                   <img src="/assets/images/Rectangle 27.png" alt="" class="w-full h-auto">
                   <div class="flex flex-col items-center space-y-1">
-                    <p>Lorem Ipsum</p>
+                    <p class="font-medium">Lorem Ipsum</p>
                     <div class="flex items-center">
                       <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
@@ -301,7 +348,7 @@
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                       </svg>
                     </div>
-                    <p class="text-main-color">Ksh. 5000</p>
+                    <p class="text-price-color">Ksh. 5000</p>
                   </div>
                 </div>
                 <!--Item 7-->
@@ -309,7 +356,7 @@
                   <span class="absolute z-10 p-1 text-center text-white bg-red-500 rounded">-20%</span>
                   <img src="/assets/images/Rectangle 26 (1).png" alt="" class="w-full h-auto">
                   <div class="flex flex-col items-center space-y-1">
-                    <p>Lorem Ipsum</p>
+                    <p class="font-medium">Lorem Ipsum</p>
                     <div class="flex items-center">
                       <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
@@ -327,14 +374,14 @@
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                       </svg>
                     </div>
-                    <p class="text-main-color">Ksh. 5000</p>
+                    <p class="text-price-color">Ksh. 5000</p>
                   </div>
                 </div>
                 <!--Item 8-->
                 <div class="flex flex-col">
                   <img src="/assets/images/Rectangle 27.png" alt="" class="w-full h-auto">
                   <div class="flex flex-col items-center space-y-1">
-                    <p>Lorem Ipsum</p>
+                    <p class="font-medium">Lorem Ipsum</p>
                     <div class="flex items-center">
                       <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
@@ -352,7 +399,7 @@
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                       </svg>
                     </div>
-                    <p class="text-main-color">Ksh. 5000</p>
+                    <p class="text-price-color">Ksh. 5000</p>
                   </div>
                 </div>
                 <!--Item 9-->
@@ -360,7 +407,7 @@
                   <p><span class="absolute z-10 p-1 text-center text-white bg-red-500 rounded">-20%</span></p>
                   <img src="/assets/images/Rectangle 30.png" alt="" class="w-full h-auto">
                   <div class="flex flex-col items-center space-y-1">
-                    <p>Lorem Ipsum</p>
+                    <p class="font-medium">Lorem Ipsum</p>
                     <div class="flex items-center">
                       <svg class="w-4 h-4 text-black ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
@@ -378,7 +425,7 @@
                           <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                       </svg>
                     </div>
-                    <p class="text-main-color">Ksh. 5000</p>
+                    <p class="text-price-color">Ksh. 5000</p>
                   </div>
                 </div>
               </div>
@@ -394,29 +441,58 @@
                         <span class="sr-only">Next</span>
                     </a></li>
                 </ul>
-                </nav>
-            </div> 
+              </nav>
+              <div class="flex flex-col">
+                <div class="flex justify-between my-5">
+                    <p class="font-medium">Home Services at LimeFiber</p>
+                    <a href="#" class="font-normal text-main-color">View all</a>
+                </div>
+                <div class="flex w-full space-x-5 xl:justify-between">
+                    <div class="flex flex-col">
+                        <img src="/assets/images/Img 05 (3).png" alt="" class="w-full h-auto">
+                        <figcaption class="mt-3">
+                            <p>Customer Support</p>
+                            <a href="#" class="text-main-color">See More &rsaquo;</a>
+                        </figcaption>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/Img 05 (4).png" alt="" class="w-full h-auto">
+                        <figcaption class="mt-3">
+                            <p>Device Installation</p>
+                            <a href="#" class="text-main-color active:red">See More &rsaquo;</a>
+                        </figcaption>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="/assets/images/Img 05 (5).png" alt="" class="w-full h-auto">
+                        <figcaption class="mt-3 ">
+                            <p>Home Phone Services</p>
+                            <a href="#" class="text-main-color active:red">See More &rsaquo;</a>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+             </div> 
           </div> 
-          <div class="w-full my-5 border-b border-border-content-color"></div>
+          <div class="w-full my-5 border-b-2 border-border-content-color"></div>
           <!--Bottom section-->
           <div class="">
             <div class="flex items-center justify-between my-10">
               <div class="px-6 py-5">
                   <div class="flex flex-col items-start justify-center py-4 space-y-8 text-sm whitespace-nowrap">
-                      <h2 class="text-xl text-wrap font-[400] text-black">Check your Home Fiber <br> Coverage</h2>
-                      <p class="font-[400] opacity-60">Find out if your area is Home Fiber <br> Ready!
+                      <h2 class="text-xl font-medium text-black text-wrap">Check your Home Fiber <br> Coverage</h2>
+                      <p class="font-normal opacity-60">Find out if your area is Home Fiber <br> Ready!
                           To begin click the button <br> below.
                       </p>
                       <div class="flex items-center space-x-8">
-                          <button class="px-4 py-2 text-center border border-gray-200 rounded-2xl">
-                              <span class="text-main-color">Get Started</span>
+                          <button class="px-4 py-2 text-center border-2 border-secondary-button-color rounded-[100px]">
+                              <span class="font-medium text-main-color">Get Started</span>
                           </button>
                           <a href="#"><img src="/assets/icons/image 115 (1).svg" alt="" class="w-12 h-10"></a>
                       </div>
                   </div>
               </div>
               <div class="">
-                <img src="/assets/images/Img 04.png" alt="" class="flex h-auto basis-1">
+                <img src="/assets/images/Img 04.png" alt="" class="flex h-auto lg:flex-1">
               </div>
               
             </div>
@@ -476,7 +552,7 @@
                       <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                   </svg>
                 </div>
-                <p class="text-privacy-text-color">Ksh 5,000</p>
+                <p class="text-price-color">Ksh 5,000</p>
               </div>
             </div>
             <!--Item two-->
@@ -501,7 +577,7 @@
                       <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                   </svg>
                 </div>
-                <p class="text-privacy-text-color">Ksh 5,000</p>
+                <p class="text-price-color">Ksh 5,000</p>
               </div>
             </div>
             <!--Item three-->
@@ -527,7 +603,7 @@
                       <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                   </svg>
                 </div>
-                <p class="text-privacy-text-color">Ksh 5,000</p>
+                <p class="text-price-color">Ksh 5,000</p>
               </div>
             </div>
             <!--Item four-->
@@ -552,7 +628,7 @@
                       <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                   </svg>
                 </div>
-                <p class="text-privacy-text-color">Ksh 5,000</p>
+                <p class="text-price-color">Ksh 5,000</p>
               </div>
             </div>
             <!--Item five-->
@@ -577,7 +653,7 @@
                       <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                   </svg>
                 </div>
-                <p class="text-privacy-text-color">Ksh 5,000</p>
+                <p class="text-price-color">Ksh 5,000</p>
               </div>
             </div>
             <!--Item 6-->
@@ -602,7 +678,7 @@
                       <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                   </svg>
                 </div>
-                <p class="text-privacy-text-color">Ksh 5,000</p>
+                <p class="text-price-color">Ksh 5,000</p>
               </div>
             </div>
             <!--Item 7-->
@@ -627,7 +703,7 @@
                       <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
                   </svg>
                 </div>
-                <p class="text-privacy-text-color">Ksh 5,000</p>
+                <p class="text-price-color">Ksh 5,000</p>
               </div>
             </div>         
           </div>
@@ -646,12 +722,12 @@
             <div class="flex flex-col">
                 <div class="flex items-center justify-center space-x-5">
                     <img src="/assets/images/image 116.png" alt="">
-                    <p class="leading-[26px] text-[23px] font-[500]">LimeFiber Coverage</p>
+                    <p class="leading-[26px] text-[23px] font-medium">LimeFiber Coverage</p>
                 </div>
                 <div class="relative flex mt-4 ml-3">
                     <div class="flex-col space-y-12">
-                        <div class="flex-col space-y-12">
-                            <h3 class="text-[17px] leading-[32px] text-black font-[500]">Check your Home Fiber <br>
+                        <div class="flex-col space-y-12 ml-9">
+                            <h3 class="text-[17px] leading-[32px] text-black font-medium">Check your Home Fiber <br>
                                 Coverage
                             </h3>
                             <p class="text-[15px] text-[#000000] opacity-60 leading-[26px] tracking-wider">Find out if your area is Home <br>
@@ -660,7 +736,7 @@
                             </p>
                         </div>
                          <div class="ml-4 goal-button-container">
-                            <button class="px-3 py-2 border-secondary-button-color border-2 rounded-3xl text-main-color text-center text-[17px]">Get started</button>
+                            <button class="px-3 py-2 border-secondary-button-color border-2 rounded-[100px] text-main-color text-center font-medium text-[17px]">Get started</button>
                          </div>
                     </div>  
                     <div class="absolute right-0 flex-1">
@@ -676,13 +752,13 @@
       <div class="hidden md:block">
           <div class="flex flex-wrap justify-between gap-3 mx-3">
               <ul class="flex space-x-10 text-xs uppercase whitespace-nowrap">
-                  <li class="text-[#707070] font-[400] text-[12px] leading-[20px]">
+                  <li class="text-[#707070] font-normal text-[12px] leading-[20px]">
                       <a href="#">Contact</a>
                   </li>
-                  <li class="text-[#707070] font-[400] text-[12px] leading-[20px]">
+                  <li class="text-[#707070] font-normal text-[12px] leading-[20px]">
                       <a href="#">About</a>
                   </li>
-                  <li class="text-[#707070] font-[400] text-[12px] leading-[20px]">
+                  <li class="text-[#707070] font-normal text-[12px] leading-[20px]">
                       <a href="#">Terms of Service</a>
                   </li>
               </ul>
@@ -741,7 +817,7 @@
               </div>
               <div class="flex space-x-1 whitespace-nowrap">
                   <input type="checkbox" name="checkbox" id="checkbox-main" class="w-[13px] h-[13px] rounded-[2px] border-[1px] border-[#707070] mt-[10px] bg-inherit text-button-color">
-                  <p class="mt-2 text-[12px] leading-[20px] font-[400]">i agree to the website's terms and conditions</p>
+                  <p class="mt-2 text-[12px] leading-[20px] font-normal">i agree to the website's terms and conditions</p>
               </div>
           </div>
           <!--Logo-->
