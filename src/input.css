@@ -261,4 +261,14 @@
             @apply flex items-center justify-center py-2 text-black border border-[#D8D8D8] h-[40px] w-[140px] rounded-[4px] text-[12px] leading-[20px] px-12;
         }
     }
+
+/**Mobile Styles*/
+ .index-section-header{
+    @apply font-normal text-sect-identifier leading-[28.5px];
+ }
+ .index-primary-heading{
+    @apply text-center font-medium leading-[28.5px];
+ }
+
+
 }

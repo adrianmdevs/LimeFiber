@@ -54,79 +54,81 @@
     </header>
     <main class="min-h-screen bg-white mb-28">
         <!--Desktop View-->
-        <section class="hidden md:grid md:grid-cols-1 md:container md:mx-auto md:gap-8">
-            <!--Contact Information-->  
-               <!--Address section-->
-               <div class="flex items-center justify-around pl-20">
-                <div class="flex flex-col space-y-10">
-                    <div class="flex items-start space-x-4">
-                        <img src="/assets/images/Vector (3).png" alt="" class="mt-2">
-                        <div class="flex flex-col flex-1 space-y-3">
-                            <h3 class="font-medium text-[24px] leading-[40.42px]">Address</h3>
-                            <p class="text-privacy-text-color text-[17px] leading-[28.63px] font-normal">0000 Road, Nairobi 00100, <br>
-                                Kenya</p>
-                        </div>
+        <section class="hidden md:flex md:flex-col md:container md:mx-auto md:gap-8">
+              <div class="flex justify-center w-full">
+                <h2 class="text-center font-medium text-[24px] text-black leading-[27px] tracking-tightest my-8">-Contact Information-</h2>
+              </div>
+              <div class="flex items-center justify-center ml-20 space-x-20">
+                <!--Contacts section->-->
+                <div class="flex flex-col justify-center space-y-6">
+                  <div class="flex">
+                      
+                    <div class="flex flex-col">
+                        <h3 class="font-medium text-[24px] leading-[40.42px]">Address</h3>
+                        <p class="text-privacy-text-color text-[17px] leading-[28.63px] font-normal">0000 Road, Nairobi 00100, <br>
+                            Kenya</p>
                     </div>
-                    <div class="flex items-start space-x-4">
-                        <img src="/assets/images/bxs_phone.png" alt="" class="mt-2">
-                        <div class="flex flex-col flex-1 space-y-3">
-                            <h3 class="font-medium text-[24px] leading-[40.42px]">Phone</h3>
-                            <p class="text-privacy-text-color text-[17px] leading-[28.63px] font-normal">Mobile:0000 1111 2222 <br>
-                                Hotline:0000 3333 4444</p>
-                        </div>
+                  </div>
+
+                  <div class="flex">
+        
+                    <div class="flex flex-col">
+                        <h3 class="font-medium text-[24px] leading-[40.42px]">Phone</h3>
+                        <p class="text-privacy-text-color text-[17px] leading-[28.63px] font-normal">Mobile:0000 1111 2222 <br>
+                            Hotline:0000 3333 4444</p>
                     </div>
-                    <div class="flex items-start space-x-4">
-                        <img src="/assets/images/Icon (1).png" alt="" class="mt-2">
-                        <div class="flex flex-col flex-1 space-y-3">
-                            <h3 class="font-medium text-[24px] leading-[40.42px]">Email address</h3>
-                            <p class="text-privacy-text-color text-[17px] leading-[28.63px] font-normal">abc@gmail.com<br>
-                                giftly@_xyz@gmail.com</p>
-                        </div>
+                  </div>
+
+                  <div class="flex">
+        
+                    <div class="flex flex-col">
+                        <h3 class="font-medium text-[24px] leading-[40.42px]">Email address</h3>
+                        <p class="text-privacy-text-color text-[17px] leading-[28.63px] font-normal">abc@gmail.com<br>
+                            giftly@_xyz@gmail.com</p>
                     </div>
+                  </div>
                 </div>
-                <!--Form section-->
-                <div class="flex-1 ml-24 lg:container">
-                    <form action="#" class="grid items-end grid-rows-3 mt-8 gap-y-5">
-                        <!-- <h2 class="-ml-14 font-medium text-[24px] leading-[27px] text-black">-Contact Information-</h2> -->
-                        <div class="relative z-0">
-                            <input type="text" id="small_standard" class="block w-full px-0 py-2 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-main-color peer" placeholder=" " />
-                            <label for="small_standard" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 ">Enter your Name*</label>
-                        </div>
-                        <div class="relative z-0">
-                            <input type="email" id="small_standard" class="block w-full px-0 py-2 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-main-color peer" placeholder=" " />
-                            <label for="small_standard" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 ">Enter Your Email*</label>
-                        </div>
-                        <div class="relative z-0">
-                            <input type="text" id="small_standard" class="block w-full px-0 pt-2 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none pb-28 dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-main-color peer" placeholder=" " />
-                            <label for="small_standard" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 ">Enter Your Message</label>
-                        </div>
-                        <div class="flex items-start">
-                            <button class="px-6 py-2 text-gray-200 bg-main-color rounded-[4px]">Submit</button>
-                        </div>
-                        <div class="flex items-center space-x-3">
-                          <input type="checkbox" name="" id="" class="w-3 h-3 text-main-color">
-                          <span class="text-privacy-text-color leading-[25.26px] text-[15px] font-normal">Save my name, email and website in this browser for the next time I contact</span>
-                        </div>
-                       
-                    </form>
+                <!--Form-->
+                <div class="flex flex-1 ">
+                  <form action="POST" class="flex flex-col w-full space-y-12">
+                    <div class="relative z-0">
+                      <input type="text" id="user_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-main-color peer" required placeholder=" " />
+                      <label for="user_name" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-5 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Enter your name<span class="text-red-500">*</span></label>
+                    </div>
+                    <div class="relative z-0">
+                      <input type="email" id="email_address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-main-color peer" required placeholder=" " />
+                      <label for="email_address" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-5 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Enter your Email<span class="text-red-500">*</span></label>
+                    </div>
+                    <div class="relative z-0 ">
+                      <label for="comment" class="block mb-2 text-sm font-normal text-privacy-text-color">Enter your Message*</label>
+                      <textarea name="comment" id="comment" rows="2" class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded border-b-2 border-gray-300 focus:border-main-color"></textarea>
+                    </div>
+                    <!-- <div class="flex items-start">
+                            <button class="px-10 py-3 text-center text-white rounded-md bg-main-color">Submit</button>
+                    </div>
+                    <div class="flex items-center">
+                      <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded-full text-main-color focus:ring-main-color focus:ring-1">
+                      <label for="link-checkbox" class="text-xs ms-2 text-nowrap text-start text-privacy-text-color">Save my name, email and website in this browser for the next time I contact</label>
+                  </div> -->
+                  </form>
                 </div>
-               </div>
+              </div>         
                <!--Frequently Asked Questions-->
                <div class="lg:mx-auto lg:container">
                 <h2 class="text-center font-medium text-[24px] text-black leading-[27px] tracking-tightest my-8">-Frequently Asked Questions-</h2>
                 <div class="flex flex-col">
                   <div class="flex flex-col ">
                       <!--Accordion-->
-                      <div class="mt-5 border rounded-lg shadow-md shadow-gray-300">
+                      <div class="mt-5 border rounded-lg shadow-md bg-opacity-10 shadow-main-color">
                         <h2>
-                          <button type="button" id="accordionButton" class="flex items-center justify-between w-full px-2 py-10 text-wrap text-start">
-                            <span>What is LimeFiber?</span>
-                            <svg viewBox="0 0 6 10" id="accordionIcon" fill="red" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-8 h-8 p-2.5 bg-border-main-color rounded-full shadow-lg">
+                          <button type="button" id="accordionButton" class="flex items-center justify-between w-full py-4 pl-6 pr-4 text-wrap text-start">
+                            <span class="text-lg">What is LimeFiber?</span>
+                            <svg viewBox="0 0 6 10" id="accordionIcon" fill="" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-8 h-8 p-2.5 bg-border-main-color rounded-full shadow-lg">
                               <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
                             </svg>
                           </button>
                           
-                            <div class="hidden" id="accordionContent">
+                            <div class="pb-8 pl-8" id="accordionContent">
                               <p class="font-normal text-[15px] leading-[30px] text-privacy-text-color">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur voluptatum <br>
                                 quae maxime esse officiis qui. Consequatur, tempora vitae, libero sunt ipsa, cumque veniam veritatis <br>
@@ -136,11 +138,11 @@
                           </div>
                         </h2>
                       </div>
-                      <div class="mt-5 border rounded-lg shadow-md shadow-gray-300">
+                      <div class="mt-5 border rounded-lg shadow-privacy-text-color">
                         <h2>
-                          <button type="button" id="accordionButton" class="flex items-center justify-between w-full px-2 py-10 text-wrap text-start">
-                            <span>Is LimeFiber the best Home Service Fiber?</span>
-                            <svg viewBox="0 0 6 10" id="accordionIcon" fill="red" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-8 h-8 p-2.5 bg-gray-200 rounded-full shadow-lg">
+                          <button type="button" id="accordionButton" class="flex items-center justify-between w-full py-10 pl-6 pr-4 text-wrap text-start">
+                            <span class="text-lg">Is LimeFiber the best Home Service Fiber?</span>
+                            <svg viewBox="0 0 6 10" id="accordionIcon" fill="red" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-8 h-8 p-2.5 bg-white rounded-full shadow-md">
                               <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
                             </svg>
                           </button>
@@ -156,11 +158,11 @@
                         </h2>
                       </div>
   
-                      <div class="mt-5 border rounded-lg shadow-md shadow-gray-300">
+                      <div class="mt-5 border rounded-lg shadow-privacy-text-color">
                         <h2>
-                          <button type="button" id="accordionButton" class="flex items-center justify-between w-full px-2 py-10 text-wrap text-start">
-                            <span>What are the discount sales on the LimeFiber Products?</span>
-                            <svg viewBox="0 0 6 10" id="accordionIcon" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-8 h-8 p-2.5 bg-gray-200 text-red rounded-full shadow-lg">
+                          <button type="button" id="accordionButton" class="flex items-center justify-between w-full py-10 pl-6 pr-4 text-wrap text-start">
+                            <span class="text-lg">What are the discount sales on the LimeFiber Products?</span>
+                            <svg viewBox="0 0 6 10" id="accordionIcon" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-8 h-8 p-2.5 bg-white text-red rounded-full shadow-md">
                               <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
                             </svg>
                           </button>
@@ -175,11 +177,11 @@
                           </div>
                         </h2>
                       </div>
-                      <div class="mt-5 border rounded-lg shadow-md shadow-gray-300">
+                      <div class="mt-5 border rounded-lg shadow-privacy-text-color">
                         <h2>
-                          <button type="button" id="accordionButton" class="flex items-center justify-between w-full px-2 py-10 text-wrap text-start">
-                            <span>Does the LimeFiber coverage cover majority of the region?</span>
-                            <svg viewBox="0 0 6 10" id="accordionIcon" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-8 h-8 p-2.5 bg-gray-200 text-red rounded-full shadow-lg">
+                          <button type="button" id="accordionButton" class="flex items-center justify-between w-full py-10 pl-6 pr-4 text-wrap text-start">
+                            <span class="text-lg">Does the LimeFiber coverage cover majority of the region?</span>
+                            <svg viewBox="0 0 6 10" id="accordionIcon" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-8 h-8 p-2.5 bg-white text-red rounded-full shadow-md">
                               <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
                             </svg>
                           </button>
@@ -200,13 +202,13 @@
                <!--Live Chat-->
                <div class="flex flex-col items-center justify-center lg:max-w-6xl lg:container lg:mx-auto">
                 <h2 class="text-center font-medium text-[24px] text-black leading-[27px] tracking-tightest my-8">-live Chat-</h2>
-                <div class="flex space-x-16 lg:justify-between lg:container lg:mx-auto">
-                    <img src="/assets/images/Group 1000004262.png" alt="" class="flex shrink-0 grow-0">
-                    <div class="flex flex-col justify-center flex-1 space-y-5">
+                <div class="flex space-x-16 justify-start-start lg:justify-between lg:container lg:mx-auto">
+                    <img src="/assets/images/Group 1000004262.png" alt="" class="flex w-auto h-1/4 shrink-0 grow-0">
+                    <div class="flex flex-col justify-center flex-1 mt-24 space-y-8">
                         <div class="border-b-2 border-border-content-color">
                             <h3 class="mb-3">Questions? Complaints? Concerns?</h3>
                         </div>
-                        <h2 class="text-lg font-semibold">Try our <Span class="text-[#249322]">Lime</Span><span class="text-[#FF1C1C]">Line</span>ChatBot</h2>
+                        <h2 class="text-3xl font-semibold">Try our <Span class="text-[#249322]">Lime</Span><span class="text-[#FF1C1C]">Line</span>ChatBot</h2>
                         <div class="flex items-start">
                           <button class="flex items-center px-5 py-3 space-x-2 border rounded-[10px] border-main-color text-main-color">
                             <span class="">Get Started</span>
@@ -244,7 +246,7 @@
                         <img src="/assets/images/Vector (3).png" alt="" class="">
                         <div class="flex flex-col flex-1 space-y-2">
                             <h3 class="font-medium text-[18px] leading-[25.26px] text-black">Address</h3>
-                            <p class="font-normal text-[15px] leading-[20.21px] text-privacy-text-color">0000 Road, Nairobi 00100,<br>
+                            <p class="font-normal text-[15px] leading-6 text-privacy-text-color">0000 Road, Nairobi 00100,<br>
                                 Kenya
                             </p>
                         </div>
@@ -253,7 +255,7 @@
                         <img src="/assets/images/bxs_phone.png" alt="" class="ml-[-10px]">
                         <div class="flex flex-col flex-1 space-y-2">
                             <h3 class="font-medium text-[18px] leading-[25.26px] text-black">Phone</h3>
-                            <p class="font-normal text-[15px] leading-[20.21px] text-privacy-text-color">Mobile:0000 1111 2222 <br>
+                            <p class="font-normal text-[15px] leading-6 text-privacy-text-color">Mobile:0000 1111 2222 <br>
                                 Hotline:0000 3333 4444</p>
                         </div>
                     </div>
@@ -261,7 +263,7 @@
                         <img src="/assets/images/Icon (1).png" alt="" class="">
                         <div class="flex flex-col flex-1 space-y-2">
                             <h3 class="font-medium text-[18px] leading-[25.26px] text-black">Email address</h3>
-                            <p class="font-normal text-[15px] leading-[20.21px] text-privacy-text-color">abc@gmail.com<br>
+                            <p class="font-normal text-[15px] leading-6 text-privacy-text-color">abc@gmail.com<br>
                                 giftly@_xyz@gmail.com</p>
                         </div>
                     </div>
@@ -272,16 +274,16 @@
                 <h3 class="font-medium text-[19px] leading-[27px] text-black my-5">FAQs</h3>
                 <div class="flex flex-col ">
                     <!--My accordion--> 
-                    <div class="mt-5 border rounded-lg shadow-md shadow-gray-300">
+                    <div class="mt-5 border rounded-lg shadow-privacy-text-color">
                       <h2>
-                        <button type="button" id="accordionButton" class="flex items-center justify-between w-full px-2 py-10 text-wrap text-start">
+                        <button type="button" id="accordionButton" class="flex items-center justify-between w-full px-2 py-4 text-wrap text-start">
                           <span>What is LimeFiber?</span>
                           <svg viewBox="0 0 6 10" id="accordionIcon" fill="red" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-5 h-8 p-2 bg-gray-200 rounded-full shadow-md">
                             <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
                           </svg>
                         </button>
                         <div>
-                          <div class="hidden" id="accordionContent">
+                          <div class="pb-3 pl-4" id="accordionContent">
                             <p class="font-normal text-[15px] leading-[30px] text-privacy-text-color">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur voluptatum <br>
                               quae maxime esse officiis qui. Consequatur, tempora vitae, libero sunt ipsa, cumque veniam veritatis <br>
@@ -292,10 +294,10 @@
                       </h2>
                     </div>
                     
-                    <div class="mt-5 border rounded-lg shadow-md shadow-gray-300">
+                    <div class="mt-5 border rounded-lg shadow-privacy-text-color">
                       <h2>
-                        <button type="button" id="accordionButton" class="flex items-center justify-between w-full px-2 py-10 text-wrap text-start">
-                          <span>Is LimeFiber the best Home Service Fiber?</span>
+                        <button type="button" id="accordionButton" class="flex items-center justify-between w-full py-10 pl-6 pr-4 text-wrap text-start">
+                          <span>Is LimeFiber the best <br> Home Service Fiber?</span>
                           <svg viewBox="0 0 6 10" id="accordionIcon" fill="red" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-5 h-8 p-2 bg-gray-200 rounded-full shadow-md">
                             <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
                           </svg>
@@ -312,10 +314,11 @@
                       </h2>
                     </div>
 
-                    <div class="mt-5 border rounded-lg shadow-md shadow-gray-300">
+                    <div class="mt-5 border rounded-lg shadow-privacy-text-color">
                       <h2>
-                        <button type="button" id="accordionButton" class="flex items-center justify-between w-full px-2 py-10 text-wrap text-start">
-                          <span>What are the discount sales on the LimeFiber Products?</span>
+                        <button type="button" id="accordionButton" class="flex items-center justify-between w-full py-10 pl-6 pr-4 text-wrap text-start">
+                          <span>What are the discount sales <br>
+                             on the LimeFiber Products?</span>
                           <svg viewBox="0 0 6 10" id="accordionIcon" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-5 h-8 p-2 bg-gray-200 rounded-full shadow-md">
                             <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
                           </svg>
@@ -331,10 +334,10 @@
                         </div>
                       </h2>
                     </div>
-                    <div class="mt-5 border rounded-lg shadow-md shadow-gray-300">
+                    <div class="mt-5 border rounded-lg shadow-privacy-text-color">
                       <h2>
-                        <button type="button" id="accordionButton" class="flex items-center justify-between w-full px-2 py-10 text-wrap text-start">
-                          <span>Does the LimeFiber coverage cover majority of the region?</span>
+                        <button type="button" id="accordionButton" class="flex items-center justify-between w-full py-10 pl-6 pr-4 text-wrap text-start">
+                          <span>Does the LimeFiber coverage <br> cover majority of the region?</span>
                           <svg viewBox="0 0 6 10" id="accordionIcon" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="red" class="w-5 h-8 p-2 bg-gray-200 rounded-full shadow-md">
                             <path d="M0.0739384 0.960613C0.0266174 0.913679 0 0.84979 0 0.78314C0 0.716491 0.0266174 0.652602 0.0739384 0.605667L0.603858 0.0757478C0.649218 0.0274165 0.712548 0 0.778831 0C0.845114 0 0.908445 0.0274165 0.953805 0.0757478L5.54811 4.67005C5.61844 4.7403 5.658 4.8356 5.65809 4.93501V5.06499C5.658 5.1644 5.61844 5.2597 5.54811 5.32995L0.953805 9.92425C0.908445 9.97258 0.845114 10 0.778831 10C0.712548 10 0.649218 9.97258 0.603858 9.92425L0.0739384 9.39433C0.0266174 9.3474 0 9.28351 0 9.21686C0 9.15021 0.0266174 9.08632 0.0739384 9.03939L4.11333 5L0.0739384 0.960613Z" fill="black"/>
                           </svg>
