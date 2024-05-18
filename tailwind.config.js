@@ -34,7 +34,9 @@ module.exports = {
         'sect-identifier':'#8A898E',
         'package-desc-color':'#331B3B',
         'overlay-color':'#605F5F',
-        'price-color':'#6B6B6B'
+        'price-color':'#6B6B6B',
+        'inactive-stautus-color': '#364254',
+        'dashboard-background-color':'#F9F9FB'
     },
     aspectRatio:{
       '16/9':'16/9',
