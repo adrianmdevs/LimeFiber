@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
   </head>
-  <body>
-    <main class="flex h-screen bg-gray-700 font-Baloo">
+  <body class="bg-slate-900">
+    <main class="container flex h-screen mx-auto bg-gray-700 font-Baloo">
       <!--Desktop Section-->
       <section
-        class="hidden lg:container lg:flex lg:mx-auto bg-dashboard-background-color"
+        class="hidden lg:flex lg:h-screen lg:w-full bg-dashboard-background-color"
       >
         <div class="flex flex-col w-1/5 bg-white border-r">
           <img
@@ -95,7 +95,7 @@
             </div>
           </div>
           <div class="flex flex-col px-5">
-            <h1 class="text-3xl font-semibold tracking-wide mt-7">
+            <h1 class="text-3xl font-semibold tracking-wide my-7">
               Ticket Handler
             </h1>
             <div class="">
@@ -147,9 +147,9 @@
                       >
                         <option
                           value="new_tickets"
-                          class="mt-5 text-[#84818A] select-none"
+                          class="mt-5 select-none"
                         >
-                          <span> Sort by priority</span>
+                          <span class="text-[#84818A]"> Select priority</span>
                         </option>
                         <option value="ongoing_tickets" class="flex items-center">
                             <span class="w-3 h-3 bg-red-800 rounded-full"></span>
@@ -177,7 +177,7 @@
                         <option value="next_week">Next Week</option>
                       </select>
                       <button
-                        class="flex items-center px-6 py-2 space-x-2 rounded bg-main-color whitespace-nowrap"
+                        class="flex items-center px-6 py-2.5 space-x-2 rounded bg-main-color whitespace-nowrap"
                       >
                         <img src="/assets/images/message-edit.png" alt="" />
                         <span class="text-white text-nowrap">New Ticket</span>
@@ -187,23 +187,23 @@
                   <div class="border-b-2">
                     <div class="flex justify-between w-3/4 mt-8">
                       <button
-                        class="flex items-center justify-center pb-4 space-x-2 border-b-2 text-sign-up-prompt-color border-sign-up-prompt-color">
+                        class="flex items-center justify-center pb-2 space-x-2 border-b-2 text-sign-up-prompt-color border-sign-up-prompt-color">
                         <img src="/assets/images/sms.png" alt="" />
                         <span>All Tickets</span>
                       </button>
                       <button
-                        class="flex items-center justify-center pb-4 space-x-2 active:text-sign-up-prompt-color active:border-b-2 active:border-sign-up-prompt-color">
+                        class="flex items-center justify-center pb-2 space-x-2 active:text-sign-up-prompt-color active:border-b-2 active:border-sign-up-prompt-color">
                         <img src="/assets/images/sms-star.png" alt="" />
                         <span>New</span>
                       </button>
                       <button
-                        class="flex items-center pb-4 active:text-sign-up-prompt-color active:border-b-2 active:border-sign-up-prompt-color">
-                        <img src="" alt="" />
+                        class="flex items-center pb-2 space-x-2 active:text-sign-up-prompt-color active:border-b-2 active:border-sign-up-prompt-color">
+                        <img src="/assets/icons/sms-trackingongoing.svg" alt="" />
                         <span>On-going</span>
                       </button>
                       <button
-                        class="flex items-center pb-4 active:text-sign-up-prompt-color active:border-b-2 active:border-sign-up-prompt-color">
-                        <img src="/assets/images/sms-star.png" alt="" />
+                        class="flex items-center pb-2 space-x-2 active:text-sign-up-prompt-color active:border-b-2 active:border-sign-up-prompt-color">
+                        <img src="/assets/icons/sms-star.svg" alt="" class="active:text-sign-up-prompt-color" />
                         <span>Resolved</span>
                       </button>
                     </div>
@@ -219,7 +219,7 @@
                           class="w-5 h-5 rounded-full bg-ticket-slot-color opacity-60"
                         ></span>
                         <p
-                          class="font-[600] text-ticket-hash-color text-[16px] leading-[14px]">
+                          class="font-semibold text-ticket-hash-color text-[16px] leading-[14px]">
                           Ticket# 2023-00000
                         </p>
                       </div>
@@ -229,7 +229,7 @@
                           How to make a purchase? Is there a third party app?
                         </h3>
                         <p
-                          class="text-ticket-description-color text-[12px] leading-[12px] font-normal">
+                          class="text-ticket-description-color text-[12px] leading-5 font-normal">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit.Lorem ipsum dolor sit amet, consectetur
                           adipiscing elit.Lorem ipsum dolor sit amet,
@@ -247,8 +247,7 @@
                       </div>
                     </div>
                     <div
-                      class="px-4 py-3 space-y-3 border border-gray-300 rounded"
-                    
+                      class="px-4 py-3 space-y-3 border border-gray-300 rounded">
                       <p class="text-xs text-gray-400 text-end">
                         Posted at 12:45 AM
                       </p>
@@ -257,7 +256,7 @@
                           class="w-5 h-5 rounded-full bg-sign-up-prompt-color opacity-60"
                         ></span>
                         <p
-                          class="font-[600] text-ticket-hash-color text-[16px] leading-[14px]"
+                          class="font-semibold text-ticket-hash-color text-[16px] leading-[14px]"
                         >
                           Ticket# 2023-00000
                         </p>
@@ -269,7 +268,7 @@
                           How to make a purchase? Is there a third party app?
                         </h3>
                         <p
-                          class="text-ticket-description-color text-[12px] leading-[12px] font-normal"
+                          class="text-ticket-description-color text-[12px] leading-5 font-normal"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit.Lorem ipsum dolor sit amet, consectetur
@@ -299,7 +298,7 @@
                           class="w-5 h-5 rounded-full bg-[#54C104] opacity-60"
                         ></span>
                         <p
-                          class="font-[600] text-ticket-hash-color text-[16px] leading-[14px]"
+                          class="font-semibold text-ticket-hash-color text-[16px] leading-[14px]"
                         >
                           Ticket# 2023-00000
                         </p>
@@ -311,7 +310,7 @@
                           How to make a purchase? Is there a third party app?
                         </h3>
                         <p
-                          class="text-ticket-description-color text-[12px] leading-[12px] font-normal"
+                          class="text-ticket-description-color text-[12px] leading-5 font-normal"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit.Lorem ipsum dolor sit amet, consectetur

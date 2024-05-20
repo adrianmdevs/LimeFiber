@@ -30,7 +30,7 @@ module.exports = {
         'ticket-hash-color':'#2E2C34',
         'ticket-description-color':'#84818A',
         'secondary-button-color': '#EBEAED',
-        'news-section-background':'#F0FFFF',
+        'news-section-background':'#F0FFEF',
         'sect-identifier':'#8A898E',
         'package-desc-color':'#331B3B',
         'overlay-color':'#605F5F',
