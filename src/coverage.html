@@ -34,41 +34,41 @@
             <div class="items-center justify-between hidden w-full md:pb-8 md:flex md:w-auto md:order-1">
               <ul class="flex flex-col p-4 mt-4 font-normal border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white ">
                 <li>
-                  <a href="#" class="block px-3 py-2 text-red-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500" >Home</a>
+                  <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:" >Home</a>
                 </li>
                 <li>
-                    <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-900 md:hover:text-green-700 md:p-0 md:active:text-red-500">Services</a>
+                    <a href="#" class="block px-3 py-2 rounded text-sign-up-prompt-color hover:bg-gray-100 md:hover:bg-transparent md:text-sign-up-prompt-color md:hover:text-green-700 md:p-0 md:active:">Services</a>
                 </li>
                 <li>
-                  <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">About Us</a>
+                  <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:">About Us</a>
                 </li>
                 <li>
-                  <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:text-red-500">Contacts</a>
+                  <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-700 md:p-0 md:active:">Contacts</a>
                 </li>
               </ul>
             </div>
             </div>
         </nav>
         <div class="hidden md:block md:border-b-2 md:text-center md:border-gray-300">
-          <h1 class="mb-5 font-medium text-33xl">LimeFiber Coverage</h1>
+          <h1 class="mb-5 text-3xl font-medium">LimeFiber Coverage</h1>
         </div>
     </header>
     <main class="min-h-screen mb-20">
         <!--Desktop Section-->
         <section class="relative hidden md:flex md:flex-col md:justify-center md:items-center ">
             <div class="container flex justify-between w-full space-x-14 md:overflow-x-auto flex-cols-2">
-                <aside class="hidden mt-10 ml-2 lg:flex lg:w-1/5 lg:flex-col lg:space-y-14">
-                    <div class="flex flex-col mt-3 space-y-10">
+                <aside class="mt-10 ml-2 lg:flex lg:w-1/5 lg:flex-col lg:space-y-10">
+                    <div class="flex flex-col mt-3 space-y-8">
                         <div class="relative z-0 w-full">
                             <input type="text" id="floating_standard" class="block w-full px-0 py-2 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-main-color peer" placeholder=" "/>
                             <label for="floating_standard" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-2 scale-60 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Search</label>
                             <svg type="submit" class="absolute right-0 w-5 h-5 text-gray-500 bottom-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                               <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
                             </svg>   
-                          </div>
-                          <div class="flex flex-col space-y-3">
+                        </div>
+                        <div class="flex flex-col space-y-3">
                             <select name="County" id="country" class="items-start w-full py-2 border rounded bg-inherit">
-                                <option value="County" class="py-2 bg-white text-main-color disabled selected">County</option>
+                                <option value="County" class="py-2 bg-white disabled selected text-privacy-text-color">County</option>
                                 <option value="County" class="py-2 bg-white text-main-color">Divison</option>
                                 <option value="County" class="py-2 bg-white text-main-color">Consticuency</option>
                                 <option value="County" class="py-2 bg-white text-main-color">Ward</option>
@@ -84,8 +84,7 @@
                             <div class="flex justify-end">
                                 <span class="text-sign-up-prompt-color">Filter</span>
                             </div>
-                          </div>
-                        
+                        </div>
                     </div>
                     <div class="flex flex-col w-full">                                                                                                                                                                                                                                                                               
                         <div class="flex flex-col my-4 space-y-12">
@@ -387,24 +386,23 @@
                         </tbody>
                     </table>
                     <!--Pagination-->
-                    <nav class="pagination-container">
-                        <ul class="pagination-list">
-                            <li class="pagination"><a href="#">1</a></li>
-                            <li class="pagination"><a href="#">2</a></li>
-                            <li class="pagination"><a href="#">
-                                <svg class="icon-styles" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <nav class="flex items-center justify-center my-8">
+                        <ul class="flex space-x-2">
+                            <li class="flex items-center justify-center h-8 px-3 leading-tight text-white border border-gray-300 rounded-sm bg-main-color hover:bg-gray-100 hover:text-gray-700"><a href="#">1</a></li>
+                            <li class="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-sm hover:bg-gray-100 hover:text-gray-700"><a href="#">2</a></li>
+                            <li class="flex items-center justify-center h-8 px-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-sm hover:bg-gray-100 hover:text-gray-700"><a href="#">
+                                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
                                 </svg>
-                                <span class="screen-reader">Next</span>
-                                </a>
-                            </li>
+                                <span class="sr-only">Next</span>
+                            </a></li>
                         </ul>
                     </nav>
                     <div class="flex flex-col items-center">
                         <div class="flex flex-col">
                             <div class="flex justify-between my-5">
                                 <p class="font-medium">See what we offer at LimeFiber!</p>
-                                <a href="#" class="font-normal text-main-color">View all</a>
+                                <a href="#" class="mr-8 font-normal text-main-color">View all</a>
                             </div>
                             <div class="flex justify-between space-x-4">
                                 <div class="flex justify-between">
@@ -422,7 +420,7 @@
                                             
                                             <img src="/assets/images/Img 05 (2).png" alt="" class="w-full h-auto">
                                             <div>
-                                                <p>Smart TV Box</p>
+                                                <p>Wireless N Router</p>
                                                 <p class="font-medium text-main-color">Ksh 15,000</p>
                                             </div>
                                         </div>
@@ -432,7 +430,7 @@
                                             
                                             <img src="/assets/images/Img 07.png" alt="" class="w-full h-auto">
                                             <div class="">
-                                                <p>Smart TV Box</p>
+                                                <p>CCTV Camera</p>
                                                 <p class="font-medium text-main-color">Ksh 15,000</p>
                                             </div>
                                         </div>
@@ -443,7 +441,7 @@
                         <div class="flex flex-col">
                             <div class="flex justify-between my-5">
                                 <p class="font-medium">Services</p>
-                                <a href="#" class="font-normal text-main-color">View all</a>
+                                <a href="#" class="mr-8 font-normal text-main-color">View all</a>
                             </div>
                             <div class="flex space-x-5 xl:justify-between">
                                 <div class="flex flex-col">
@@ -473,10 +471,10 @@
                 </div>
             </div>
             <!--Bottom section-->
-            <div class="container mx-auto my-20 border-b-2 border-border-content-color"></div>
-            <div class="container flex items-start w-full mx-auto space-x-6">
+            <div class="container flex mx-auto my-20 border-b-2 border-border-content-color"></div>
+            <div class="container flex items-center justify-between w-full mx-auto space-x-6">
                 <img src="/assets/images/Video Player (2).png" alt="" class="w-1/2 h-auto">
-                <div class="flex flex-col items-center mt-24 space-y-10">
+                <div class="flex flex-col items-start space-y-10">
                     <h2 class="text-3xl font-medium text-wrap">See what People are talking <br> about</h2>
                     <p>Is the future in our hands? Is AI the next big thing in Home <br> Fiber Technology?</p>
                     <a href="/src/article.html" class="font-medium text-main-color">Find out More &rsaquo;</a>
@@ -485,7 +483,7 @@
         </section>
         <!--Mobile section-->
         <section class="w-full space-y-6 md:hidden">
-            <form class="mx-3">
+            <form class="mx-3">   
                 <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
                 <div class="relative">
                     <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
@@ -493,7 +491,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                         </svg>
                     </div>
-                    <input type="search" id="default-search" class="block w-full p-3 text-sm rounded bg-privacy-text-color/50 text-privacy-text-color ps-10 focus:ring-main-color focus:border-main-color" placeholder="Search" required />  
+                    <input type="search" id="default-search" class="block w-full p-3 text-sm bg-gray-200 rounded text-privacy-text-color ps-10 focus:ring-main-color focus:border-main-color" placeholder="Search" required />
                 </div>
             </form>
             <!--Top pan section (Products)-->
@@ -545,7 +543,24 @@
                         <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
                             <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
                             <td class="">
-                                <button class="flex items-center py-0.5 px-1 justify-center space-x-3 bg-table-button-color-two rounded-xl">
+                                <button class="flex items-center py-0.5 px-1 justify-center  bg-table-button-color-two rounded-xl">
+                                    <span class="w-4 h-4">•</span>
+                                    <span class="text-black list-disc">Inactive</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="sr-only">Action</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3333 11.3333C10.5985 11.3333 10.8528 11.4387 11.0404 11.6262C11.2279 11.8138 11.3333 12.0681 11.3333 12.3333C11.3333 12.5985 11.2279 12.8529 11.0404 13.0404C10.8528 13.228 10.5985 13.3333 10.3333 13.3333C10.068 13.3333 9.81368 13.228 9.62614 13.0404C9.43861 12.8529 9.33325 12.5985 9.33325 12.3333C9.33325 12.0681 9.43861 11.8138 9.62614 11.6262C9.81368 11.4387 10.068 11.3333 10.3333 11.3333ZM10.3333 6.66667C10.5985 6.66667 10.8528 6.77202 11.0404 6.95956C11.2279 7.1471 11.3333 7.40145 11.3333 7.66667C11.3333 7.93188 11.2279 8.18624 11.0404 8.37377C10.8528 8.56131 10.5985 8.66667 10.3333 8.66667C10.068 8.66667 9.81368 8.56131 9.62614 8.37377C9.43861 8.18624 9.33325 7.93188 9.33325 7.66667C9.33325 7.40145 9.43861 7.1471 9.62614 6.95956C9.81368 6.77202 10.068 6.66667 10.3333 6.66667ZM10.3333 2C10.5985 2 10.8528 2.10536 11.0404 2.29289C11.2279 2.48043 11.3333 2.73478 11.3333 3C11.3333 3.26522 11.2279 3.51957 11.0404 3.70711C10.8528 3.89464 10.5985 4 10.3333 4C10.068 4 9.81368 3.89464 9.62614 3.70711C9.43861 3.51957 9.33325 3.26522 9.33325 3C9.33325 2.73478 9.43861 2.48043 9.62614 2.29289C9.81368 2.10536 10.068 2 10.3333 2Z" fill="#667085"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
+                            <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
+                            <td class="">
+                                <button class="flex items-center py-0.5 px-1 justify-center space-x-1 bg-table-button-color-two rounded-xl">
                                     <span class="w-2 h-2 bg-black rounded-full"></span>
                                     <span class="text-black list-disc">Inactive</span>
                                 </button>
@@ -578,10 +593,44 @@
                         </tr>
                         <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
                             <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
+                            <td>
+                                <button class="flex items-center py-0.5 px-1 rounded-xl space-x-5 bg-table-button-color">
+                                    <span class="w-2 h-2 rounded-full bg-main-color"></span>
+                                    <span class="list-disc text-main-color">Active</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="sr-only">Action</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3333 11.3333C10.5985 11.3333 10.8528 11.4387 11.0404 11.6262C11.2279 11.8138 11.3333 12.0681 11.3333 12.3333C11.3333 12.5985 11.2279 12.8529 11.0404 13.0404C10.8528 13.228 10.5985 13.3333 10.3333 13.3333C10.068 13.3333 9.81368 13.228 9.62614 13.0404C9.43861 12.8529 9.33325 12.5985 9.33325 12.3333C9.33325 12.0681 9.43861 11.8138 9.62614 11.6262C9.81368 11.4387 10.068 11.3333 10.3333 11.3333ZM10.3333 6.66667C10.5985 6.66667 10.8528 6.77202 11.0404 6.95956C11.2279 7.1471 11.3333 7.40145 11.3333 7.66667C11.3333 7.93188 11.2279 8.18624 11.0404 8.37377C10.8528 8.56131 10.5985 8.66667 10.3333 8.66667C10.068 8.66667 9.81368 8.56131 9.62614 8.37377C9.43861 8.18624 9.33325 7.93188 9.33325 7.66667C9.33325 7.40145 9.43861 7.1471 9.62614 6.95956C9.81368 6.77202 10.068 6.66667 10.3333 6.66667ZM10.3333 2C10.5985 2 10.8528 2.10536 11.0404 2.29289C11.2279 2.48043 11.3333 2.73478 11.3333 3C11.3333 3.26522 11.2279 3.51957 11.0404 3.70711C10.8528 3.89464 10.5985 4 10.3333 4C10.068 4 9.81368 3.89464 9.62614 3.70711C9.43861 3.51957 9.33325 3.26522 9.33325 3C9.33325 2.73478 9.43861 2.48043 9.62614 2.29289C9.81368 2.10536 10.068 2 10.3333 2Z" fill="#667085"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
+                            <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
                             <td class="">
-                                <button class="flex items-center py-0.5 px-1 justify-center space-x-3 bg-table-button-color-two rounded-xl">
+                                <button class="flex items-center py-0.5 px-1 justify-center space-x-1 bg-table-button-color-two rounded-xl">
                                     <span class="w-2 h-2 bg-black rounded-full"></span>
                                     <span class="text-black list-disc">Inactive</span>
+                                </button>
+                            </td>
+                            <td>
+                                <button>
+                                    <span class="sr-only">Action</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.3333 11.3333C10.5985 11.3333 10.8528 11.4387 11.0404 11.6262C11.2279 11.8138 11.3333 12.0681 11.3333 12.3333C11.3333 12.5985 11.2279 12.8529 11.0404 13.0404C10.8528 13.228 10.5985 13.3333 10.3333 13.3333C10.068 13.3333 9.81368 13.228 9.62614 13.0404C9.43861 12.8529 9.33325 12.5985 9.33325 12.3333C9.33325 12.0681 9.43861 11.8138 9.62614 11.6262C9.81368 11.4387 10.068 11.3333 10.3333 11.3333ZM10.3333 6.66667C10.5985 6.66667 10.8528 6.77202 11.0404 6.95956C11.2279 7.1471 11.3333 7.40145 11.3333 7.66667C11.3333 7.93188 11.2279 8.18624 11.0404 8.37377C10.8528 8.56131 10.5985 8.66667 10.3333 8.66667C10.068 8.66667 9.81368 8.56131 9.62614 8.37377C9.43861 8.18624 9.33325 7.93188 9.33325 7.66667C9.33325 7.40145 9.43861 7.1471 9.62614 6.95956C9.81368 6.77202 10.068 6.66667 10.3333 6.66667ZM10.3333 2C10.5985 2 10.8528 2.10536 11.0404 2.29289C11.2279 2.48043 11.3333 2.73478 11.3333 3C11.3333 3.26522 11.2279 3.51957 11.0404 3.70711C10.8528 3.89464 10.5985 4 10.3333 4C10.068 4 9.81368 3.89464 9.62614 3.70711C9.43861 3.51957 9.33325 3.26522 9.33325 3C9.33325 2.73478 9.43861 2.48043 9.62614 2.29289C9.81368 2.10536 10.068 2 10.3333 2Z" fill="#667085"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
+                            <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
+                            <td>
+                                <button class="flex items-center py-0.5 px-1 rounded-xl space-x-4 bg-table-button-color">
+                                    <span class="w-2 h-2 rounded-full bg-main-color"></span>
+                                    <span class="list-disc text-main-color">Active</span>
                                 </button>
                             </td>
                             <td>
@@ -646,25 +695,8 @@
                         </tr>
                         <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
                             <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
-                            <td>
-                                <button class="flex items-center py-0.5 px-1 rounded-xl space-x-3 bg-table-button-color">
-                                    <span class="w-2 h-2 rounded-full bg-main-color"></span>
-                                    <span class="list-disc text-main-color">Active</span>
-                                </button>
-                            </td>
-                            <td>
-                                <button>
-                                    <span class="sr-only">Action</span>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.3333 11.3333C10.5985 11.3333 10.8528 11.4387 11.0404 11.6262C11.2279 11.8138 11.3333 12.0681 11.3333 12.3333C11.3333 12.5985 11.2279 12.8529 11.0404 13.0404C10.8528 13.228 10.5985 13.3333 10.3333 13.3333C10.068 13.3333 9.81368 13.228 9.62614 13.0404C9.43861 12.8529 9.33325 12.5985 9.33325 12.3333C9.33325 12.0681 9.43861 11.8138 9.62614 11.6262C9.81368 11.4387 10.068 11.3333 10.3333 11.3333ZM10.3333 6.66667C10.5985 6.66667 10.8528 6.77202 11.0404 6.95956C11.2279 7.1471 11.3333 7.40145 11.3333 7.66667C11.3333 7.93188 11.2279 8.18624 11.0404 8.37377C10.8528 8.56131 10.5985 8.66667 10.3333 8.66667C10.068 8.66667 9.81368 8.56131 9.62614 8.37377C9.43861 8.18624 9.33325 7.93188 9.33325 7.66667C9.33325 7.40145 9.43861 7.1471 9.62614 6.95956C9.81368 6.77202 10.068 6.66667 10.3333 6.66667ZM10.3333 2C10.5985 2 10.8528 2.10536 11.0404 2.29289C11.2279 2.48043 11.3333 2.73478 11.3333 3C11.3333 3.26522 11.2279 3.51957 11.0404 3.70711C10.8528 3.89464 10.5985 4 10.3333 4C10.068 4 9.81368 3.89464 9.62614 3.70711C9.43861 3.51957 9.33325 3.26522 9.33325 3C9.33325 2.73478 9.43861 2.48043 9.62614 2.29289C9.81368 2.10536 10.068 2 10.3333 2Z" fill="#667085"/>
-                                    </svg>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
-                            <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
                             <td class="">
-                                <button class="flex items-center py-0.5 px-1 justify-center space-x-3 bg-table-button-color-two rounded-xl">
+                                <button class="flex items-center py-0.5 px-1 justify-center space-x-1 bg-table-button-color-two rounded-xl">
                                     <span class="w-2 h-2 bg-black rounded-full"></span>
                                     <span class="text-black list-disc">Inactive</span>
                                 </button>
@@ -681,7 +713,7 @@
                         <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
                             <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
                             <td>
-                                <button class="flex items-center py-0.5 px-1 rounded-xl space-x-3 bg-table-button-color">
+                                <button class="flex items-center py-0.5 px-1 rounded-xl space-x-4 bg-table-button-color">
                                     <span class="w-2 h-2 rounded-full bg-main-color"></span>
                                     <span class="list-disc text-main-color">Active</span>
                                 </button>
@@ -698,41 +730,7 @@
                         <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
                             <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
                             <td class="">
-                                <button class="flex items-center py-0.5 px-1 justify-center space-x-3 bg-table-button-color-two rounded-xl">
-                                    <span class="w-2 h-2 bg-black rounded-full"></span>
-                                    <span class="text-black list-disc">Inactive</span>
-                                </button>
-                            </td>
-                            <td>
-                                <button>
-                                    <span class="sr-only">Action</span>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.3333 11.3333C10.5985 11.3333 10.8528 11.4387 11.0404 11.6262C11.2279 11.8138 11.3333 12.0681 11.3333 12.3333C11.3333 12.5985 11.2279 12.8529 11.0404 13.0404C10.8528 13.228 10.5985 13.3333 10.3333 13.3333C10.068 13.3333 9.81368 13.228 9.62614 13.0404C9.43861 12.8529 9.33325 12.5985 9.33325 12.3333C9.33325 12.0681 9.43861 11.8138 9.62614 11.6262C9.81368 11.4387 10.068 11.3333 10.3333 11.3333ZM10.3333 6.66667C10.5985 6.66667 10.8528 6.77202 11.0404 6.95956C11.2279 7.1471 11.3333 7.40145 11.3333 7.66667C11.3333 7.93188 11.2279 8.18624 11.0404 8.37377C10.8528 8.56131 10.5985 8.66667 10.3333 8.66667C10.068 8.66667 9.81368 8.56131 9.62614 8.37377C9.43861 8.18624 9.33325 7.93188 9.33325 7.66667C9.33325 7.40145 9.43861 7.1471 9.62614 6.95956C9.81368 6.77202 10.068 6.66667 10.3333 6.66667ZM10.3333 2C10.5985 2 10.8528 2.10536 11.0404 2.29289C11.2279 2.48043 11.3333 2.73478 11.3333 3C11.3333 3.26522 11.2279 3.51957 11.0404 3.70711C10.8528 3.89464 10.5985 4 10.3333 4C10.068 4 9.81368 3.89464 9.62614 3.70711C9.43861 3.51957 9.33325 3.26522 9.33325 3C9.33325 2.73478 9.43861 2.48043 9.62614 2.29289C9.81368 2.10536 10.068 2 10.3333 2Z" fill="#667085"/>
-                                    </svg>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
-                            <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
-                            <td>
-                                <button class="flex items-center py-0.5 px-1 rounded-xl space-x-3 bg-table-button-color">
-                                    <span class="w-2 h-2 rounded-full bg-main-color"></span>
-                                    <span class="list-disc text-main-color">Active</span>
-                                </button>
-                            </td>
-                            <td>
-                                <button>
-                                    <span class="sr-only">Action</span>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.3333 11.3333C10.5985 11.3333 10.8528 11.4387 11.0404 11.6262C11.2279 11.8138 11.3333 12.0681 11.3333 12.3333C11.3333 12.5985 11.2279 12.8529 11.0404 13.0404C10.8528 13.228 10.5985 13.3333 10.3333 13.3333C10.068 13.3333 9.81368 13.228 9.62614 13.0404C9.43861 12.8529 9.33325 12.5985 9.33325 12.3333C9.33325 12.0681 9.43861 11.8138 9.62614 11.6262C9.81368 11.4387 10.068 11.3333 10.3333 11.3333ZM10.3333 6.66667C10.5985 6.66667 10.8528 6.77202 11.0404 6.95956C11.2279 7.1471 11.3333 7.40145 11.3333 7.66667C11.3333 7.93188 11.2279 8.18624 11.0404 8.37377C10.8528 8.56131 10.5985 8.66667 10.3333 8.66667C10.068 8.66667 9.81368 8.56131 9.62614 8.37377C9.43861 8.18624 9.33325 7.93188 9.33325 7.66667C9.33325 7.40145 9.43861 7.1471 9.62614 6.95956C9.81368 6.77202 10.068 6.66667 10.3333 6.66667ZM10.3333 2C10.5985 2 10.8528 2.10536 11.0404 2.29289C11.2279 2.48043 11.3333 2.73478 11.3333 3C11.3333 3.26522 11.2279 3.51957 11.0404 3.70711C10.8528 3.89464 10.5985 4 10.3333 4C10.068 4 9.81368 3.89464 9.62614 3.70711C9.43861 3.51957 9.33325 3.26522 9.33325 3C9.33325 2.73478 9.43861 2.48043 9.62614 2.29289C9.81368 2.10536 10.068 2 10.3333 2Z" fill="#667085"/>
-                                    </svg>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="flex items-center py-2.5 justify-between border-b-2 border-[#EAECF0]">
-                            <td class="ml-5 font-normal leading-[20px]">Lorem Ipsum</td>
-                            <td class="">
-                                <button class="flex items-center py-0.5 px-1 justify-center space-x-3 bg-table-button-color-two rounded-xl">
+                                <button class="flex items-center py-0.5 px-1 justify-center space-x-1 bg-table-button-color-two rounded-xl">
                                     <span class="w-2 h-2 bg-black rounded-full"></span>
                                     <span class="text-black list-disc">Inactive</span>
                                 </button>
@@ -801,15 +799,15 @@
                 </table>
             </div>  
             <!--Pagination-->
-            <nav class="pagination-container">
-                <ul class="pagination-list">
-                    <li class="pagination"><a href="#">1</a></li>
-                    <li class="pagination"><a href="#">2</a></li>
-                    <li class="pagination"><a href="#">
-                        <svg class="icon-styles" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <nav class="flex items-center justify-center mb-8">
+                <ul class="flex space-x-2">
+                    <li class="flex items-center justify-center h-8 px-3 leading-tight text-white border border-gray-300 rounded-sm bg-main-color hover:bg-gray-100 hover:text-gray-700"><a href="#">1</a></li>
+                    <li class="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-sm hover:bg-gray-100 hover:text-gray-700"><a href="#">2</a></li>
+                    <li class="flex items-center justify-center h-8 px-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-sm hover:bg-gray-100 hover:text-gray-700"><a href="#">
+                        <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
                         </svg>
-                        <span class="screen-reader">Next</span>
+                        <span class="sr-only">Next</span>
                     </a></li>
                 </ul>
             </nav>

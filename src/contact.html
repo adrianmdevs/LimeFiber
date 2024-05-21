@@ -60,57 +60,59 @@
               </div>
               <div class="flex items-center justify-center ml-20 space-x-20">
                 <!--Contacts section->-->
-                <div class="flex flex-col justify-center space-y-6">
-                  <div class="flex items-start space-x-3.5">
-                    <img src="/assets/images/Vector (3).png" alt="" class="mt-4">
+                <div class="flex flex-col items-center justify-center space-y-6">
+                  <div class="flex items-start space-x-2">
+                    <!-- <img src="/assets/images/Vector (3).png" alt="" class="mt-4"> -->
                     <div class="flex flex-col">
                         <h3 class="font-medium text-[24px] leading-10">Address</h3>
-                        <p class="text-privacy-text-color text-[17px] leading-[28.63px] font-normal">0000 Road, Nairobi 00100, <br>
+                        <p class="text-privacy-text-color text-[17px] leading-7 font-normal">0000 Road, Nairobi 00100, <br>
                             Kenya</p>
                     </div>
                   </div>
 
                   <div class="flex items-start space-x-2">
-                    <img src="/assets/images/bxs_phone.png" alt="" class="mt-2">
+                    <!-- <img src="/assets/images/bxs_phone.png" alt="" class="mt-2"> -->
                     <div class="flex flex-col">
                         <h3 class="font-medium text-[24px] leading-10">Phone</h3>
-                        <p class="text-privacy-text-color text-[17px] leading-[28.63px] font-normal">Mobile:0000 1111 2222 <br>
+                        <p class="text-privacy-text-color text-[17px] leading-7 font-normal">Mobile:0000 1111 2222 <br>
                             Hotline:0000 3333 4444</p>
                     </div>
                   </div>
 
                   <div class="flex items-start space-x-3">
-                    <img src="/assets/images/Icon (1).png" alt="" class="mt-2">
+                    <!-- <img src="/assets/images/Icon (1).png" alt="" class="mt-2"> -->
                     <div class="flex flex-col">
                         <h3 class="font-medium text-[24px] leading-10">Email address</h3>
-                        <p class="text-privacy-text-color text-[17px] leading-[28.63px] font-normal">abc@gmail.com<br>
+                        <p class="text-privacy-text-color text-[17px] leading-7 font-normal">abc@gmail.com<br>
                             giftly@_xyz@gmail.com</p>
                     </div>
                   </div>
                 </div>
                 <!--Form-->
-                <div class="flex flex-1">
-                  <form action="POST" class="flex flex-col w-full space-y-12">
-                    <div class="relative z-0">
-                      <input type="text" id="user_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-main-color peer" required placeholder=" " />
-                      <label for="user_name" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-5 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Enter your name<span class="text-sign-up-prompt-color">*</span></label>
+                <div class="flex flex-col flex-1 mt-20 space-y-14">
+                  <form action="POST" class="flex flex-col justify-center w-full space-y-0">  
+                    <div class="flex flex-col space-y-12">
+                      <div class="relative z-0">
+                        <input type="text" id="user_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-main-color peer" required placeholder=" " />
+                        <label for="user_name" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-5 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Enter your name<span class="text-sign-up-prompt-color">*</span></label>
+                      </div>
+                      <div class="relative z-0">
+                        <input type="email" id="email_address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-main-color peer" required placeholder=" " />
+                        <label for="email_address" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-5 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Enter your Email<span class="text-sign-up-prompt-color">*</span></label>
+                      </div>
+                      <div class="relative z-0 ">
+                        <label for="comment" class="block mb-2 text-sm font-normal text-privacy-text-color">Enter your Message*</label>
+                        <textarea name="comment" id="comment" rows="2" class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded border-b-2 border-gray-300 focus:border-main-color"></textarea>
+                      </div>
                     </div>
-                    <div class="relative z-0">
-                      <input type="email" id="email_address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-main-color peer" required placeholder=" " />
-                      <label for="email_address" class="absolute text-sm text-gray-500  duration-300 transform -translate-y-5 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-main-color  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-5 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Enter your Email<span class="text-sign-up-prompt-color">*</span></label>
-                    </div>
-                    <div class="relative z-0 ">
-                      <label for="comment" class="block mb-2 text-sm font-normal text-privacy-text-color">Enter your Message*</label>
-                      <textarea name="comment" id="comment" rows="2" class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded border-b-2 border-gray-300 focus:border-main-color"></textarea>
-                    </div>
-                    <!-- <div class="flex items-start">
+                  </form>
+                   <div class="flex items-start">
                             <button class="px-10 py-3 text-center text-white rounded-md bg-main-color">Submit</button>
                     </div>
                     <div class="flex items-center">
-                      <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded-full text-main-color focus:ring-main-color focus:ring-1">
+                      <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 text-main-color focus:ring-main-color focus:ring-1">
                       <label for="link-checkbox" class="text-xs ms-2 text-nowrap text-start text-privacy-text-color">Save my name, email and website in this browser for the next time I contact</label>
-                  </div> -->
-                  </form>
+                  </div>
                 </div>
               </div>         
                <!--Frequently Asked Questions-->
@@ -128,7 +130,7 @@
                             </svg>
                           </button>
                           
-                            <div class="pb-8 pl-8" id="accordionContent">
+                            <div class="pb-8 pl-6" id="accordionContent">
                               <p class="font-normal text-[15px] leading-7 text-privacy-text-color">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur voluptatum <br>
                                 quae maxime esse officiis qui. Consequatur, tempora vitae, libero sunt ipsa, cumque veniam veritatis <br>
