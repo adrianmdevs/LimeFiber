@@ -11,6 +11,10 @@ module.exports = {
       'bruno-ace':['Bruno Ace','sans-serif'],
       'Dm Sans':['DM Sans','sans-serif']
     },
+    fontSize:{
+     'mobile-content':['15px', '20px'],
+     'Desktop-content':['20px','28px']
+    },
     extend: {
       colors:{
         'main-color':'#75A774',

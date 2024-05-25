@@ -16,7 +16,7 @@
         @apply font-[600] text-black leading-[28.5px] text-[30px];
     }
     .section-header-secondary {
-        @apply font-[400] leading-3 text-black text-[28px];
+        @apply font-normal leading-3 text-black text-[28px];
     }
 
     
@@ -27,7 +27,7 @@
             @apply w-full h-auto ;
         }
         .image-figcaption{
-            @apply font-[400] text-[16px] leading-[22px] text-privacy-text-color;
+            @apply font-normal text-[16px] leading-[22px] text-privacy-text-color;
         }
         .news-content-container{
             @apply flex flex-col items-start gap-2;
@@ -35,7 +35,7 @@
                 @apply font-[500] text-[22px] leading-[26px];
             }
             .article-news-section{
-                @apply text-privacy-text-color text-[18px] leading-[27px] font-[400];
+                @apply text-privacy-text-color text-[18px] leading-[27px] font-normal ;
             }
             .article-news-link{
                 @apply text-main-color font-[700] text-[18px] leading-[30.31px];
@@ -56,7 +56,7 @@
                 @apply font-[500] text-[38px] leading-[43px];
             }
             .item-description{
-                @apply font-[400] text-privacy-text-color text-[17px] leading-[28.63px] text-center;
+                @apply font-normal text-privacy-text-color text-[17px] leading-[28.63px] text-center;
             }
         }
         .item-button-wrapper{
@@ -72,10 +72,10 @@
     /***Services and Landing Page( second edition) Styles*/
 
     .heading-section{
-        @apply font-[400] text-[12px] leading-[28.5px] text-[#8A898E] tracking-[6px] uppercase;
+        @apply font-normal text-[12px] leading-[28.5px] text-[#8A898E] tracking-[6px] uppercase;
     }
     .heading-subsection{
-        @apply text-4xl font-medium text-gray-800;
+        @apply text-2xl font-medium text-gray-800;
     }
     .btn-secondary{
         @apply  text-center text-green-500 tracking-wide text-opacity-85 border border-gray-300 font-medium rounded-[28px] hover:shadow-md hover:text-green-300 hover:shadow-green-300;
@@ -94,7 +94,7 @@
             @apply font-[600] text-[16px] leading-[21.97px];
         }
         .package-description-styles{
-            @apply font-[400] text-[15px] leading-[21.97px];
+            @apply font-normal text-[15px] leading-[21.97px];
         }
     }
     /**Testimonials */
@@ -109,16 +109,16 @@
         .testimonial-desktop-message-container{
             @apply flex-col space-y-5;
             .testimonial-desktop-message{
-                @apply text-[#707070] leading-[28.5px] text-[18px] font-[400];
+                @apply text-[#707070] leading-[28.5px] text-[18px] font-normal ;
             }
             .testimonial-desktop-user{
-                @apply text-[14px] text-[#707070] leading-[26px] font-[400] uppercase;
+                @apply text-[14px] text-[#707070] leading-[26px] font-normal uppercase;
             }
         }
     }
     /*Mobile Styles*/
     .heading-section-mobile{
-        @apply font-[400] text-[14px] leading-[28.5px] tracking-[0.55em] text-center md:hidden; 
+        @apply font-normal text-[14px] leading-[28.5px] tracking-[0.55em] text-center md:hidden; 
     }
     .heading-subsection-mobile{
         @apply font-[600] text-[18px] leading-[28.5px] text-center text-black;
@@ -136,7 +136,7 @@
     
     }
     .mobile-minor-heading-four{
-        @apply text-[22px] leading-[28.5px] font-[400] text-nowrap text-center font-baloo;
+        @apply text-[22px] leading-[28.5px] font-normal text-nowrap text-center font-baloo;
     
     }
     .mobile-button-main{
@@ -156,7 +156,7 @@
                     @apply font-[600] text-[18px] leading-[28.5px];
                 }
                 .value-prop-content-body{
-                    @apply font-[400] text-[16px] leading-[28.5px];
+                    @apply font-normal text-[16px] leading-[28.5px];
                 }
                 .value-prop-content-button{
                     @apply bg-button-color rounded-[10px] p-4 text-center text-white;
@@ -195,7 +195,7 @@
             .goal-message-container{
                 @apply flex justify-center text-base;
                 .goal-main-message{
-                    @apply text-center font-[400] text-[#707070] text-[18px] leading-[28.5px];
+                    @apply text-center font-normal text-[#707070] text-[18px] leading-[28.5px];
                 }
                 .goal-button-container{
                     @apply flex items-center justify-center;
